@@ -113,6 +113,7 @@ const property = [
         "isFeatured": false,
         "views": 432
     },
+
     {
         "slug": "waterfront-cottage-vancouver",
         "propertyTitle": "Luxury Waterfront Cottage in Vancouver",
@@ -367,5 +368,4 @@ const property = [
         "views": 987
     }
 ]
-
 export default property;
