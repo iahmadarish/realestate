@@ -1,9 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-family-small: "Pathway Extreme", sans-serif;
+  --font-family-medium: "Share", sans-serif;
+  --font-family-heading: "Comfortaa", sans-serif;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="bg-white backdrop-blur-md sticky top-0 z-50"
+      className="bg-white backdrop-blur-md py-3 sticky top-0 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -39,7 +39,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-1">
+          <div className="hidden uppercase font-family-heading md:flex space-x-1">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -49,7 +49,7 @@ const Navbar = () => {
               >
                 <Link to={item.path}>
                   <motion.div
-                    className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`relative text-xl px-4 py-2 rounded-lg  font-medium transition-colors ${
                       location.pathname === item.path ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
                     }`}
                     whileHover={{ scale: 1.05 }}

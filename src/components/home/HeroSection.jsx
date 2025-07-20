@@ -9,7 +9,7 @@ export default function HeroSection() {
             {/* Left Content */}
             <div className="p-8 lg:p-16 space-y-8">
               <div className="space-y-6">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl font-family-heading lg:text-5xl xl:text-6xl font-light text-gray-900 leading-tight">
                   Find your best <br className="hidden sm:block" />
                   Real Estate
                 </h1>
