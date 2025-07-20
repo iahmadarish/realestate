@@ -18,6 +18,7 @@ import {
   Star,
   Play
 } from 'lucide-react';
+import SimilarProperties from '@/components/property/SimilarProperties';
 
 const PropertyDetails = () => {
   const { slug } = useParams();
@@ -445,6 +446,8 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
+
+        <SimilarProperties/>
       </div>
     </motion.div>
   );

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
-
+import logo from "@/assets/logo.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
@@ -32,9 +32,9 @@ const Navbar = () => {
           <motion.div className="flex items-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to="/"
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
+              className="font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
             >
-              RealEstate
+              <img className="h-12 w-full" src={logo} alt="" />
             </Link>
           </motion.div>
 

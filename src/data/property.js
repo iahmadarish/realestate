@@ -71,301 +71,517 @@ const property = [
         "isFeatured": true,
         "views": 1087
     },
-    {
-        "slug": "downtown-loft-toronto",
-        "propertyTitle": "Industrial-Style Loft in Downtown Toronto",
-        "status": "For Rent",
-        "propertyDescription": "Chic industrial loft featuring exposed brick walls, high ceilings, and large windows. Located in the heart of Toronto's entertainment district.",
-        "propertyLocation": {
-            "address": "123 King St W",
-            "city": "Toronto",
-            "area": "Entertainment District",
-            "stateOrCounty": "Ontario",
-            "zip": "M5H 3T9",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 1,
-            "bathrooms": 1,
-            "maxGuests": 2,
-            "floor": 8
-        },
-        "propertyDetails": {
-            "propertyId": 20022,
-            "customId": "TOR-201",
-            "price": 3200,
-            "currency": "CAD",
-            "propertySize": 850,
-            "propertySizeUnit": "ft²",
-            "yearBuilt": 2010,
-            "garageSize": "None"
-        },
-        "propertyAmenities": [
-            "WiFi", "Smart TV", "Washer/Dryer", "Air Conditioning",
-            "Elevator", "Concierge", "Bike Storage"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
-            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-            "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
-        ],
-        "listingDate": "2025-07-15T00:00:00Z",
-        "isFeatured": false,
-        "views": 432
-    },
 
-    {
-        "slug": "waterfront-cottage-vancouver",
-        "propertyTitle": "Luxury Waterfront Cottage in Vancouver",
-        "status": "For Sale",
-        "propertyDescription": "Beautiful waterfront property with private dock, stunning ocean views, and modern amenities. Perfect for those seeking tranquility near the city.",
-        "propertyLocation": {
-            "address": "456 Marine Dr",
-            "city": "Vancouver",
-            "area": "West Vancouver",
-            "stateOrCounty": "British Columbia",
-            "zip": "V7V 1H7",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 3,
-            "bathrooms": 2,
-            "maxGuests": 6
-        },
-        "propertyDetails": {
-            "propertyId": 20023,
-            "customId": "VAN-305",
-            "price": 4200000,
-            "currency": "CAD",
-            "propertySize": 2200,
-            "propertySizeUnit": "ft²",
-            "propertyLotSize": 0.5,
-            "propertyLotSizeUnit": "ac",
-            "yearBuilt": 2015,
-            "garageSize": "2 cars"
-        },
-        "propertyAmenities": [
-            "Waterfront", "Private Dock", "Fireplace", "Hot Tub",
-            "Gourmet Kitchen", "Home Theater", "Smart Home System"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
-            "https://images.unsplash.com/photo-1600585152220-90363fe7e115",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
-        ],
-        "listingDate": "2025-07-10T00:00:00Z",
-        "isFeatured": true,
-        "views": 765
-    },
-    {
-        "slug": "historic-townhouse-quebec-city",
-        "propertyTitle": "Charming Historic Townhouse in Old Quebec",
-        "status": "For Sale",
-        "propertyDescription": "Exquisitely restored 18th-century townhouse in the heart of Old Quebec. Features original stone walls, wooden beams, and modern comforts.",
-        "propertyLocation": {
-            "address": "78 Rue du Petit Champlain",
-            "city": "Quebec City",
-            "area": "Old Quebec",
-            "stateOrCounty": "Quebec",
-            "zip": "G1K 4H3",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 4,
-            "bathrooms": 3,
-            "maxGuests": 8
-        },
-        "propertyDetails": {
-            "propertyId": 20024,
-            "customId": "QC-410",
-            "price": 2900000,
-            "currency": "CAD",
-            "propertySize": 2800,
-            "propertySizeUnit": "ft²",
-            "yearBuilt": 1750,
-            "garageSize": "None",
-            "basement": "Stone"
-        },
-        "propertyAmenities": [
-            "Historical Features", "Fireplace", "Courtyard",
-            "Original Hardwood Floors", "Walkable Location"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1605146769289-440113cc3d00",
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-            "https://images.unsplash.com/photo-1600607688969-a5bfcd646154"
-        ],
-        "listingDate": "2025-07-05T00:00:00Z",
-        "isFeatured": false,
-        "views": 321
-    },
-    {
-        "slug": "mountain-view-calgary",
-        "propertyTitle": "Modern Family Home with Mountain Views in Calgary",
-        "status": "For Sale",
-        "propertyDescription": "Spacious family home featuring stunning Rocky Mountain views, open floor plan, and premium finishes throughout. Located in a quiet neighborhood.",
-        "propertyLocation": {
-            "address": "1234 Mountain Ave NW",
-            "city": "Calgary",
-            "area": "Bowness",
-            "stateOrCounty": "Alberta",
-            "zip": "T3B 0E3",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 5,
-            "bathrooms": 3,
-            "maxGuests": 10
-        },
-        "propertyDetails": {
-            "propertyId": 20025,
-            "customId": "CGY-512",
-            "price": 1850000,
-            "currency": "CAD",
-            "propertySize": 3200,
-            "propertySizeUnit": "ft²",
-            "propertyLotSize": 0.25,
-            "propertyLotSizeUnit": "ac",
-            "yearBuilt": 2018,
-            "garageSize": "3 cars"
-        },
-        "propertyAmenities": [
-            "Mountain Views", "Deck", "Fireplace", "Home Office",
-            "Finished Basement", "Smart Home Features"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
-            "https://images.unsplash.com/photo-1600585152220-90363fe7e115"
-        ],
-        "listingDate": "2025-06-28T00:00:00Z",
-        "isFeatured": true,
-        "views": 890
-    },
-    {
-        "slug": "beachfront-nova-scotia",
-        "propertyTitle": "Oceanfront Retreat in Nova Scotia",
-        "status": "For Rent",
-        "propertyDescription": "Stunning beachfront property with direct access to a private beach. Features large windows to maximize ocean views and a cozy fireplace.",
-        "propertyLocation": {
-            "address": "789 Coastal Rd",
-            "city": "Halifax",
-            "area": "Peggy's Cove",
-            "stateOrCounty": "Nova Scotia",
-            "zip": "B3Z 2J1",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 2,
-            "bathrooms": 2,
-            "maxGuests": 4
-        },
-        "propertyDetails": {
-            "propertyId": 20026,
-            "customId": "NS-615",
-            "price": 3500,
-            "currency": "CAD",
-            "propertySize": 1500,
-            "propertySizeUnit": "ft²",
-            "yearBuilt": 2012,
-            "garageSize": "1 car"
-        },
-        "propertyAmenities": [
-            "Beachfront", "Private Beach Access", "Fireplace",
-            "Outdoor Shower", "Kayaks Included", "Deck"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
-            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6"
-        ],
-        "listingDate": "2025-06-20T00:00:00Z",
-        "isFeatured": false,
-        "views": 543
-    },
-    {
-        "slug": "luxury-penthouse-toronto",
-        "propertyTitle": "Ultra-Luxury Penthouse in Downtown Toronto",
-        "status": "For Sale",
-        "propertyDescription": "Exceptional penthouse offering panoramic city views, designer finishes, and unparalleled amenities in Toronto's most prestigious building.",
-        "propertyLocation": {
-            "address": "1 Yonge St",
-            "city": "Toronto",
-            "area": "Waterfront",
-            "stateOrCounty": "Ontario",
-            "zip": "M5E 1W7",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 3,
-            "bathrooms": 3,
-            "maxGuests": 6,
-            "floor": 55
-        },
-        "propertyDetails": {
-            "propertyId": 20027,
-            "customId": "TOR-720",
-            "price": 9800000,
-            "currency": "CAD",
-            "propertySize": 4500,
-            "propertySizeUnit": "ft²",
-            "yearBuilt": 2020,
-            "garageSize": "2 cars"
-        },
-        "propertyAmenities": [
-            "Private Elevator", "Smart Home System", "Wine Cellar",
-            "Infinity Pool", "24/7 Concierge", "Home Theater",
-            "Panoramic Views"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-            "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
-            "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
-        ],
-        "listingDate": "2025-06-15T00:00:00Z",
-        "isFeatured": true,
-        "views": 1204
-    },
-    {
-        "slug": "ski-chalet-whistler",
-        "propertyTitle": "Luxury Ski Chalet in Whistler",
-        "status": "For Rent",
-        "propertyDescription": "Stunning ski-in/ski-out chalet with direct access to Whistler slopes. Features a hot tub, sauna, and breathtaking mountain views.",
-        "propertyLocation": {
-            "address": "456 Mountain Way",
-            "city": "Whistler",
-            "area": "Whistler Village",
-            "stateOrCounty": "British Columbia",
-            "zip": "V0N 1B4",
-            "country": "Canada"
-        },
-        "propertySpecification": {
-            "bedrooms": 4,
-            "bathrooms": 3,
-            "maxGuests": 10
-        },
-        "propertyDetails": {
-            "propertyId": 20028,
-            "customId": "WH-825",
-            "price": 2500,
-            "currency": "CAD",
-            "propertySize": 2800,
-            "propertySizeUnit": "ft²",
-            "yearBuilt": 2015,
-            "garageSize": "2 cars"
-        },
-        "propertyAmenities": [
-            "Ski-in/Ski-out", "Hot Tub", "Sauna", "Fireplace",
-            "Game Room", "Mountain Views", "Boot Warmers"
-        ],
-        "images": [
-            "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
-            "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
-            "https://images.unsplash.com/photo-1600566752229-2506e9f0a7e0"
-        ],
-        "listingDate": "2025-06-10T00:00:00Z",
-        "isFeatured": true,
-        "views": 987
-    }
+{
+  "slug": "luxury-loft-toronto",
+  "propertyTitle": "Luxury Loft with Lake View – Downtown Toronto Skyline Condo on 18th Floor",
+  "status": "For Sale",
+  "propertyDescription": "Experience upscale urban living in this chic 18th-floor loft in downtown Toronto, offering expansive views of Lake Ontario and the CN Tower. Designed with high ceilings, contemporary finishes, and smart home features, this loft is perfect for modern professionals or couples.",
+  "propertyLocation": {
+    "address": "1121 Bay St, Unit 1803",
+    "city": "Toronto",
+    "area": "Downtown Core",
+    "stateOrCounty": "Ontario",
+    "zip": "M5S 3L9",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "maxGuests": 2,
+    "floor": 18
+  },
+  "propertyDetails": {
+    "propertyId": 20022,
+    "customId": "TOR-215",
+    "price": 985000,
+    "currency": "CAD",
+    "propertySize": 890,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 0.2,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 2,
+    "yearBuilt": 2012,
+    "garageSize": "Underground - 1 car",
+    "basement": "None"
+  },
+  "propertyAmenities": [
+    "Smart Home Integration", "WiFi", "65″ 4K TV", "Washer/Dryer Combo", "Central Heating",
+    "Underground Parking", "Fitness Center", "Infinity Pool", "Concierge", "Balcony",
+    "Pet Friendly", "Elevator", "Fire Alarm System"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1599423300746-b62533397364",
+    "https://images.unsplash.com/photo-1600585153922-3d267f9b02c2",
+    "https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=ANOTHER_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=1121+Bay+St,+Toronto"
+  },
+  "whatsNearby": [
+    {"name": "Metro Grocery", "type": "Supermarket"},
+    {"name": "Toronto General Hospital", "type": "Hospital"},
+    {"name": "Eaton Centre", "type": "Shopping Mall"}
+  ],
+  "floorPlan": {
+    "description": "Modern open-plan loft with a large living area and private balcony.",
+    "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb"
+  },
+  "host": {
+    "name": "Liam Chen",
+    "contactEmail": "liam.chen@example.com",
+    "languages": ["English", "Mandarin", "French"]
+  },
+  "proximity": {
+    "metro": "3 min walk",
+    "shops": "2 min walk",
+    "restaurants": "1 min walk"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": false,
+  "views": 836
+}
+,
+
+{
+  "slug": "beachfront-condo-vancouver",
+  "propertyTitle": "Elegant Beachfront Condo – 10th Floor Ocean View Apartment in Vancouver",
+  "status": "For Sale",
+  "propertyDescription": "Wake up to the sound of waves in this elegant beachfront condo with full-length glass windows facing the Pacific Ocean. Located on the 10th floor, this residence offers a blend of coastal serenity and city convenience with luxury interior details.",
+  "propertyLocation": {
+    "address": "450 Beach Ave, Unit 1007",
+    "city": "Vancouver",
+    "area": "West End",
+    "stateOrCounty": "British Columbia",
+    "zip": "V6C 3W6",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "maxGuests": 6,
+    "floor": 10
+  },
+  "propertyDetails": {
+    "propertyId": 20023,
+    "customId": "VAN-302",
+    "price": 2650000,
+    "currency": "CAD",
+    "propertySize": 1450,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 0.3,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 4,
+    "yearBuilt": 2010,
+    "garageSize": "2 cars",
+    "basement": "None"
+  },
+  "propertyAmenities": [
+    "WiFi", "Smart Thermostat", "75″ OLED TV", "Dishwasher", "Washer", "Dryer",
+    "Heated Flooring", "Rooftop Lounge", "Private Beach Access", "Jacuzzi", 
+    "Concierge", "Elevator", "Pet Friendly"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1559599078-4b4c1b1fbd4b",
+    "https://images.unsplash.com/photo-1600585154042-3be47d9d321d",
+    "https://images.unsplash.com/photo-1615874959474-d609969a25f5"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=BEACHFRONT_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=450+Beach+Ave,+Vancouver"
+  },
+  "whatsNearby": [
+    {"name": "English Bay Beach", "type": "Beach"},
+    {"name": "Urban Fare", "type": "Supermarket"},
+    {"name": "Stanley Park", "type": "Park"}
+  ],
+  "floorPlan": {
+    "description": "Open layout with ocean-facing living room, modern kitchen, and three spacious bedrooms.",
+    "image": "https://images.unsplash.com/photo-1600585154262-68ef0e7c5376"
+  },
+  "host": {
+    "name": "Isabelle Dupont",
+    "contactEmail": "isabelle@example.com",
+    "languages": ["English", "French"]
+  },
+  "proximity": {
+    "metro": "7 min walk",
+    "shops": "3 min walk",
+    "restaurants": "2 min walk"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": true,
+  "views": 1243
+}
+,
+
+{
+  "slug": "mountain-cabin-banff",
+  "propertyTitle": "Rustic Mountain Cabin with Forest Views – Private Retreat in Banff National Park",
+  "status": "For Sale",
+  "propertyDescription": "Escape to nature in this rustic yet luxurious mountain cabin nestled in Banff National Park. Surrounded by towering pines and wildlife, this peaceful retreat offers wooden interiors, a stone fireplace, and wrap-around deck views of the Rockies.",
+  "propertyLocation": {
+    "address": "16 Moraine Lake Rd",
+    "city": "Banff",
+    "area": "Lake Louise",
+    "stateOrCounty": "Alberta",
+    "zip": "T1L 1K2",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "maxGuests": 8,
+    "floor": 2
+  },
+  "propertyDetails": {
+    "propertyId": 20024,
+    "customId": "BNF-409",
+    "price": 1875000,
+    "currency": "CAD",
+    "propertySize": 3200,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 2.5,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 6,
+    "yearBuilt": 1998,
+    "garageSize": "Detached - 2 cars",
+    "basement": "Finished"
+  },
+  "propertyAmenities": [
+    "Fireplace", "Hot Tub", "BBQ Grill", "WiFi", "Full Kitchen",
+    "Laundry Room", "Wood Stove", "Wrap-around Deck", "Private Driveway",
+    "Nature Trails", "Security System", "Pet Friendly"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+    "https://images.unsplash.com/photo-1600585153862-0e1e4a4ed20c",
+    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=MOUNTAIN_CABIN_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=16+Moraine+Lake+Rd,+Banff"
+  },
+  "whatsNearby": [
+    {"name": "Lake Louise", "type": "Lake"},
+    {"name": "Sunshine Village", "type": "Ski Resort"},
+    {"name": "Banff Upper Hot Springs", "type": "Hot Spring"}
+  ],
+  "floorPlan": {
+    "description": "Two-level log cabin with a large open living area, chef’s kitchen, and separate guest suite.",
+    "image": "https://images.unsplash.com/photo-1600585154184-3b51aeca866c"
+  },
+  "host": {
+    "name": "Elijah Thompson",
+    "contactEmail": "elijah@example.com",
+    "languages": ["English"]
+  },
+  "proximity": {
+    "metro": "Not available",
+    "shops": "15 min drive",
+    "restaurants": "12 min drive"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": false,
+  "views": 672
+},
+
+{
+  "slug": "suburban-home-ottawa",
+  "propertyTitle": "Spacious Suburban Family Home – Quiet Neighborhood in Ottawa",
+  "status": "For Sale",
+  "propertyDescription": "Located in a peaceful residential suburb of Ottawa, this spacious family home features a fenced backyard, two-car garage, and a fully finished basement. Ideal for families seeking comfort, safety, and easy access to schools and parks.",
+  "propertyLocation": {
+    "address": "3427 Riverbend Crescent",
+    "city": "Ottawa",
+    "area": "Barrhaven",
+    "stateOrCounty": "Ontario",
+    "zip": "K2J 4X9",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "maxGuests": 8,
+    "floor": 2
+  },
+  "propertyDetails": {
+    "propertyId": 20025,
+    "customId": "OTT-223",
+    "price": 799000,
+    "currency": "CAD",
+    "propertySize": 2100,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 0.25,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 7,
+    "yearBuilt": 2016,
+    "garageSize": "2 cars",
+    "basement": "Finished"
+  },
+  "propertyAmenities": [
+    "Central AC", "Washer/Dryer", "Dishwasher", "Backyard Deck", "Smart Thermostat",
+    "Fireplace", "Double Garage", "Home Office", "Pet Friendly"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1599423300746-b62533397364",
+    "https://images.unsplash.com/photo-1600585153858-1e8a5a45855e",
+    "https://images.unsplash.com/photo-1600585154204-03b39543f104"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=SUBURBAN_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=3427+Riverbend+Crescent,+Ottawa"
+  },
+  "whatsNearby": [
+    {"name": "Longfields High School", "type": "School"},
+    {"name": "Walmart Barrhaven", "type": "Supermarket"},
+    {"name": "Stonecrest Park", "type": "Park"}
+  ],
+  "floorPlan": {
+    "description": "Two-story layout with four bedrooms upstairs, open kitchen-living-dining area, and home office.",
+    "image": "https://images.unsplash.com/photo-1600585154448-cb7a5885e226"
+  },
+  "host": {
+    "name": "Kaitlyn Smith",
+    "contactEmail": "kaitlyn@example.com",
+    "languages": ["English", "French"]
+  },
+  "proximity": {
+    "metro": "10 min drive",
+    "shops": "5 min walk",
+    "restaurants": "5 min drive"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": true,
+  "views": 945
+}
+,
+
+
+{
+  "slug": "lakehouse-retreat-muskoka",
+  "propertyTitle": "Charming Lakehouse Retreat – Waterfront Property in Muskoka",
+  "status": "For Sale",
+  "propertyDescription": "This charming lakehouse in Muskoka is a private sanctuary with direct access to the lake, its own dock, and breathtaking sunset views. Perfect for nature lovers, boaters, and anyone seeking a quiet escape.",
+  "propertyLocation": {
+    "address": "88 Lakeshore Dr",
+    "city": "Muskoka",
+    "area": "Lake Joseph",
+    "stateOrCounty": "Ontario",
+    "zip": "P1L 1W8",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "maxGuests": 6,
+    "floor": 1
+  },
+  "propertyDetails": {
+    "propertyId": 20026,
+    "customId": "MSK-998",
+    "price": 1475000,
+    "currency": "CAD",
+    "propertySize": 1750,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 1.5,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 5,
+    "yearBuilt": 2003,
+    "garageSize": "1 car",
+    "basement": "Crawl Space"
+  },
+  "propertyAmenities": [
+    "Private Dock", "Kayak Access", "Fireplace", "Deck", "Full Kitchen",
+    "Pet Friendly", "Lake View", "BBQ Grill", "Hot Tub"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1617093725484-b7c662a9f97c",
+    "https://images.unsplash.com/photo-1615874959474-d609969a25f5",
+    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=LAKEHOUSE_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=88+Lakeshore+Dr,+Muskoka"
+  },
+  "whatsNearby": [
+    {"name": "Lake Joseph Golf Club", "type": "Recreation"},
+    {"name": "Port Carling", "type": "Town Center"},
+    {"name": "Sherwood Inn Spa", "type": "Spa"}
+  ],
+  "floorPlan": {
+    "description": "Single-level plan with master bedroom facing the lake, open kitchen, and cozy family room.",
+    "image": "https://images.unsplash.com/photo-1600585154442-bc6fe464abf4"
+  },
+  "host": {
+    "name": "Noah Green",
+    "contactEmail": "noah@example.com",
+    "languages": ["English"]
+  },
+  "proximity": {
+    "metro": "Not applicable",
+    "shops": "10 min drive",
+    "restaurants": "12 min drive"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": false,
+  "views": 823
+}
+,
+{
+  "slug": "townhouse-mississauga",
+  "propertyTitle": "Modern Townhouse with Private Garage – Prime Location in Mississauga",
+  "status": "For Sale",
+  "propertyDescription": "This sleek 3-bedroom townhouse is located in the heart of Mississauga and features a modern kitchen, private garage, rooftop terrace, and excellent transit connectivity. Great for young families or first-time buyers.",
+  "propertyLocation": {
+    "address": "2195 Sheridan Park Dr",
+    "city": "Mississauga",
+    "area": "Erindale",
+    "stateOrCounty": "Ontario",
+    "zip": "L5K 1C8",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "maxGuests": 6,
+    "floor": 3
+  },
+  "propertyDetails": {
+    "propertyId": 20027,
+    "customId": "MIS-720",
+    "price": 690000,
+    "currency": "CAD",
+    "propertySize": 1400,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 0.1,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 5,
+    "yearBuilt": 2018,
+    "garageSize": "1 car",
+    "basement": "Unfinished"
+  },
+  "propertyAmenities": [
+    "Rooftop Terrace", "Washer/Dryer", "Smart Locks", "Security System", "Garage",
+    "Open Kitchen", "High-Speed Internet", "Central AC", "Pet Friendly"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1600585153853-17d0fa46b1c5",
+    "https://images.unsplash.com/photo-1600585154448-cb7a5885e226",
+    "https://images.unsplash.com/photo-1600585154380-8f3d81f4f9b1"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=TOWNHOUSE_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=2195+Sheridan+Park+Dr,+Mississauga"
+  },
+  "whatsNearby": [
+    {"name": "Erindale GO Station", "type": "Transit"},
+    {"name": "Erin Mills Town Centre", "type": "Shopping"},
+    {"name": "Credit Valley Hospital", "type": "Hospital"}
+  ],
+  "floorPlan": {
+    "description": "Three-level layout with ground floor garage, main living area, and upper bedrooms.",
+    "image": "https://images.unsplash.com/photo-1600585154445-f2a77df8a4d9"
+  },
+  "host": {
+    "name": "Priya Mehta",
+    "contactEmail": "priya@example.com",
+    "languages": ["English", "Hindi", "Punjabi"]
+  },
+  "proximity": {
+    "metro": "2 min walk",
+    "shops": "5 min walk",
+    "restaurants": "3 min walk"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": false,
+  "views": 578
+}
+,
+{
+  "slug": "furnished-rental-calgary",
+  "propertyTitle": "Furnished 1-Bedroom Rental – Downtown Calgary High-Rise",
+  "status": "For Rent",
+  "propertyDescription": "A fully-furnished, modern 1-bedroom rental apartment located in a secure high-rise tower in downtown Calgary. Ideal for business travelers, students, or couples looking for short- or long-term stays.",
+  "propertyLocation": {
+    "address": "104 5th Ave SW",
+    "city": "Calgary",
+    "area": "Beltline",
+    "stateOrCounty": "Alberta",
+    "zip": "T2P 2V5",
+    "country": "Canada"
+  },
+  "propertySpecification": {
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "maxGuests": 2,
+    "floor": 14
+  },
+  "propertyDetails": {
+    "propertyId": 20028,
+    "customId": "CAL-R456",
+    "price": 1950,
+    "currency": "CAD",
+    "propertySize": 750,
+    "propertySizeUnit": "ft²",
+    "propertyLotSize": 0,
+    "propertyLotSizeUnit": "ac",
+    "rooms": 2,
+    "yearBuilt": 2015,
+    "garageSize": "1 car (underground)",
+    "basement": "None"
+  },
+  "propertyAmenities": [
+    "Furnished", "WiFi", "Netflix", "Work Desk", "Balcony", "In-Unit Laundry",
+    "Concierge", "Gym", "Rooftop Garden", "Secure Entry", "Elevator"
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1600585154448-cb7a5885e226",
+    "https://images.unsplash.com/photo-1599423300746-b62533397364",
+    "https://images.unsplash.com/photo-1600585154204-03b39543f104"
+  ],
+  "video": {
+    "youtube": "https://www.youtube.com/watch?v=CALGARY_RENTAL_VIDEO_ID"
+  },
+  "map": {
+    "googleMap": "https://maps.google.com/?q=104+5th+Ave+SW,+Calgary"
+  },
+  "whatsNearby": [
+    {"name": "Stephen Avenue Walk", "type": "Attraction"},
+    {"name": "Core Shopping Centre", "type": "Mall"},
+    {"name": "City Hall LRT Station", "type": "Transit"}
+  ],
+  "floorPlan": {
+    "description": "Open-plan 1-bedroom unit with city-view balcony and separate living space.",
+    "image": "https://images.unsplash.com/photo-1600585154454-7c7c372a2c2e"
+  },
+  "host": {
+    "name": "Jordan Lee",
+    "contactEmail": "jordan@example.com",
+    "languages": ["English", "Korean"]
+  },
+  "proximity": {
+    "metro": "2 min walk",
+    "shops": "1 min walk",
+    "restaurants": "Nearby"
+  },
+  "listingDate": "2025-07-20T00:00:00Z",
+  "isFeatured": true,
+  "views": 1342
+}
+
 ]
 export default property;

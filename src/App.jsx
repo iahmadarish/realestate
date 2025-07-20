@@ -13,6 +13,7 @@ import Contact from "./pages/Frontend/Contact"
 import AdminDashboard from "./pages/Admin/AdminDashboard"
 import PropertyDetails from "./pages/Frontend/PropertyDetails"
 import PropertyListing from "./components/property/PropertyListing"
+import BlogDetails from "./pages/Frontend/BlogDetails"
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
           <Route path="/property/:slug" element={<PropertyDetails />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route path="contact" element={<Contact />} />
+
         </Route>
 
         {/* Admin Routes */}

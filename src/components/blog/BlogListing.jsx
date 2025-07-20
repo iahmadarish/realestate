@@ -1,10 +1,11 @@
-import { motion } from "framer-motion"
-import { Calendar, Clock, Eye, Heart, ArrowRight, Search } from 'lucide-react'
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import blog from "../../data/blog"
+"use client"
 
-const Blog = () => {
+import { motion } from "framer-motion"
+import { Calendar, Clock, Eye, Heart, ArrowRight, Search } from "lucide-react"
+import { useState } from "react"
+import blog from "@/data/blog"
+
+const BlogListing = ({ onBlogSelect }) => {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [sortBy, setSortBy] = useState("newest")
@@ -158,68 +159,67 @@ const Blog = () => {
               {featuredBlogs.map((post, index) => (
                 <motion.article
                   key={post.id}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                   variants={itemVariants}
                   whileHover={{ y: -5 }}
+                  onClick={() => onBlogSelect(post)}
                 >
-                  <Link to={`/blog/${post.slug}`}>
-                    <div className="relative h-64 overflow-hidden">
-                      <img
-                        src={post.image || "/placeholder.svg"}
-                        alt={post.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-blue-600 text-white px-3 py-1 text-xs font-semibold rounded-full">
-                          Featured
-                        </span>
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={post.image || "/placeholder.svg"}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 text-xs font-semibold rounded-full">
+                        Featured
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-6">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+                        {post.category}
+                      </span>
+                      <div className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {formatDate(post.publishedDate)}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="w-4 h-4 mr-1" />
+                        {post.readTime}
                       </div>
                     </div>
 
-                    <div className="p-6">
-                      <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                          {post.category}
-                        </span>
-                        <div className="flex items-center">
-                          <Calendar className="w-4 h-4 mr-1" />
-                          {formatDate(post.publishedDate)}
-                        </div>
-                        <div className="flex items-center">
-                          <Clock className="w-4 h-4 mr-1" />
-                          {post.readTime}
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <img
+                          src={post.author.avatar || "/placeholder.svg"}
+                          alt={post.author.name}
+                          className="w-8 h-8 rounded-full mr-3"
+                        />
+                        <div>
+                          <p className="text-sm font-medium text-gray-900">{post.author.name}</p>
+                          <p className="text-xs text-gray-500">{post.author.role}</p>
                         </div>
                       </div>
 
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
-                      <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-4 text-sm text-gray-500">
                         <div className="flex items-center">
-                          <img
-                            src={post.author.avatar || "/placeholder.svg"}
-                            alt={post.author.name}
-                            className="w-8 h-8 rounded-full mr-3"
-                          />
-                          <div>
-                            <p className="text-sm font-medium text-gray-900">{post.author.name}</p>
-                            <p className="text-xs text-gray-500">{post.author.role}</p>
-                          </div>
+                          <Eye className="w-4 h-4 mr-1" />
+                          {post.views}
                         </div>
-
-                        <div className="flex items-center gap-4 text-sm text-gray-500">
-                          <div className="flex items-center">
-                            <Eye className="w-4 h-4 mr-1" />
-                            {post.views}
-                          </div>
-                          <div className="flex items-center">
-                            <Heart className="w-4 h-4 mr-1" />
-                            {post.likes}
-                          </div>
+                        <div className="flex items-center">
+                          <Heart className="w-4 h-4 mr-1" />
+                          {post.likes}
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </motion.article>
               ))}
             </div>
@@ -244,50 +244,45 @@ const Blog = () => {
             {regularBlogs.map((post, index) => (
               <motion.article
                 key={post.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer border border-gray-100"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
+                onClick={() => onBlogSelect(post)}
               >
-                <Link to={`/blog/${post.slug}`}>
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={post.image || "/placeholder.svg"}
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-full object-cover" />
+                </div>
 
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
-                        {post.category}
-                      </span>
-                      <div className="flex items-center">
-                        <Clock className="w-4 h-4 mr-1" />
-                        {post.readTime}
-                      </div>
-                    </div>
-
-                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
-                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center">
-                        <img
-                          src={post.author.avatar || "/placeholder.svg"}
-                          alt={post.author.name}
-                          className="w-6 h-6 rounded-full mr-2"
-                        />
-                        <p className="text-sm text-gray-700">{post.author.name}</p>
-                      </div>
-
-                      <div className="flex items-center text-blue-600">
-                        <span className="text-sm font-medium mr-1">Read More</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                    <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
+                      {post.category}
+                    </span>
+                    <div className="flex items-center">
+                      <Clock className="w-4 h-4 mr-1" />
+                      {post.readTime}
                     </div>
                   </div>
-                </Link>
+
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
+                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <img
+                        src={post.author.avatar || "/placeholder.svg"}
+                        alt={post.author.name}
+                        className="w-6 h-6 rounded-full mr-2"
+                      />
+                      <p className="text-sm text-gray-700">{post.author.name}</p>
+                    </div>
+
+                    <div className="flex items-center text-blue-600">
+                      <span className="text-sm font-medium mr-1">Read More</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                  </div>
+                </div>
               </motion.article>
             ))}
           </div>
@@ -303,4 +298,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogListing
