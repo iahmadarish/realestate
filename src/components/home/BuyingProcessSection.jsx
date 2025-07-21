@@ -30,7 +30,7 @@ export default function BuyingProcessSection() {
 
   return (
     <section className="py-20 bg-stone-50">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 ">
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-orange-500 font-medium text-sm tracking-wider uppercase mb-4">OUR PROCESS</p>

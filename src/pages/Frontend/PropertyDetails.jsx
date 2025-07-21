@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
 import propertyData from '../../data/property';
-import { 
-  ChevronLeft, 
-  MapPin, 
-  Bed, 
-  Bath, 
-  Square, 
-  Calendar, 
-  CheckCircle, 
+import {
+  ChevronLeft,
+  MapPin,
+  Bed,
+  Bath,
+  Square,
+  Calendar,
+  CheckCircle,
   Eye,
   Heart,
   Share2,
@@ -24,7 +24,7 @@ const PropertyDetails = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const property = propertyData.find(p => p.slug === slug);
-  
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -35,14 +35,14 @@ const PropertyDetails = () => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   if (!property) {
     return (
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="min-h-screen flex items-center justify-center bg-white"
@@ -57,7 +57,7 @@ const PropertyDetails = () => {
           </motion.div>
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Property not found</h1>
           <p className="text-gray-600 mb-6">The property you're looking for doesn't exist.</p>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/')}
@@ -78,13 +78,13 @@ const PropertyDetails = () => {
   };
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === property.images.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === 0 ? property.images.length - 1 : prev - 1
     );
   };
@@ -109,6 +109,12 @@ const PropertyDetails = () => {
     }
   };
 
+  function getYoutubeVideoId(url) {
+    const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
+  }
+
   return (
     <motion.div
       initial="hidden"
@@ -117,13 +123,12 @@ const PropertyDetails = () => {
       className="min-h-screen bg-white"
     >
       {/* Floating Header */}
-      <motion.header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrollY > 100 
-            ? 'bg-white/90 backdrop-blur-xl shadow-lg border-b border-gray-100' 
-            : 'bg-transparent'
-        }`}
-        style={{ 
+      <motion.header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrollY > 100
+          ? 'bg-white/90 backdrop-blur-xl shadow-lg border-b border-gray-100'
+          : 'bg-transparent'
+          }`}
+        style={{
           transform: `translateY(${scrollY > 100 ? '0' : '-20px'})`,
           opacity: scrollY > 100 ? 1 : 0
         }}
@@ -162,7 +167,7 @@ const PropertyDetails = () => {
 
       <div className="relative">
         {/* Hero Section with Image Gallery */}
-        <motion.section variants={itemVariants} className="relative h-[70vh] overflow-hidden">
+        <motion.section variants={itemVariants} className="relative h-screen overflow-hidden">
           <div className="relative w-full h-full">
             <AnimatePresence mode="wait">
               <motion.img
@@ -176,7 +181,7 @@ const PropertyDetails = () => {
                 transition={{ duration: 0.7, ease: "easeOut" }}
               />
             </AnimatePresence>
-            
+
             {/* Image Navigation */}
             <button
               onClick={prevImage}
@@ -197,9 +202,8 @@ const PropertyDetails = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentImageIndex ? 'bg-white w-8' : 'bg-white/50'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-white w-8' : 'bg-white/50'
+                    }`}
                 />
               ))}
             </div>
@@ -207,7 +211,7 @@ const PropertyDetails = () => {
             {/* Property Status Badge */}
             <div className="absolute top-6 left-6 flex items-center space-x-3">
               {property.isFeatured && (
-                <motion.span 
+                <motion.span
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full shadow-lg"
@@ -215,7 +219,7 @@ const PropertyDetails = () => {
                   ✨ Featured
                 </motion.span>
               )}
-              <motion.span 
+              <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 className="bg-white/90 backdrop-blur-sm text-gray-800 text-sm font-medium px-3 py-1 rounded-full shadow-lg border border-white/20"
@@ -246,7 +250,7 @@ const PropertyDetails = () => {
         </motion.section>
 
         {/* Main Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content Column */}
             <div className="lg:col-span-2 space-y-8">
@@ -254,7 +258,7 @@ const PropertyDetails = () => {
               <motion.div variants={itemVariants} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <h1 className="text-3xl font-bold text-gray-900 mb-3 leading-tight">
+                    <h1 className="text-3xl font-family-heading font-bold text-gray-900 mb-3 leading-tight">
                       {property.propertyTitle}
                     </h1>
                     <div className="flex items-center text-gray-600 mb-4">
@@ -284,22 +288,22 @@ const PropertyDetails = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 bg-gray-50 rounded-xl">
                   <div className="text-center">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Bed className="w-6 h-6 text-blue-600" />
+                    <div className="w-18 h-18 border p-1 flex items-center justify-center mx-auto mb-3">
+                      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/living-room-3d-icon-download-in-png-blend-fbx-gltf-file-formats--house-home-furniture-isometric-pack-interiors-icons-5251967.png" alt="" />
                     </div>
                     <div className="text-2xl font-bold text-gray-900">{property.propertySpecification.bedrooms}</div>
                     <div className="text-sm text-gray-600">Bedrooms</div>
                   </div>
                   <div className="text-center">
-                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Bath className="w-6 h-6 text-green-600" />
+                    <div className="w-18 h-18 border p-1  flex items-center justify-center mx-auto mb-3">
+                      <img src="https://media.cgtrader.com/variants/nnPx3prgD6rY1JLbh3cfhvo6/a26e47dab5f2d22c43d6c5ce4b4b46ecc30c70918878397cba1a10c1e35d7bfc/231023-washbasin-1.jpg" alt="" />
                     </div>
                     <div className="text-2xl font-bold text-gray-900">{property.propertySpecification.bathrooms}</div>
                     <div className="text-sm text-gray-600">Bathrooms</div>
                   </div>
                   <div className="text-center">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Square className="w-6 h-6 text-purple-600" />
+                    <div className="w-18 h-18 border p-1 flex items-center justify-center mx-auto mb-3">
+                      <Square className="w-12 h-12 text-purple-600" />
                     </div>
                     <div className="text-2xl font-bold text-gray-900">
                       {property.propertyDetails.propertySize}
@@ -307,8 +311,8 @@ const PropertyDetails = () => {
                     <div className="text-sm text-gray-600">{property.propertyDetails.propertySizeUnit}</div>
                   </div>
                   <div className="text-center">
-                    <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Calendar className="w-6 h-6 text-orange-600" />
+                    <div className="w-18 h-18 border p-1  flex items-center justify-center mx-auto mb-3">
+                        <img src="https://png.pngtree.com/png-vector/20250429/ourmid/pngtree-3d-red-calendar-icon-with-time-showing-schedule-png-image_15963428.png" alt="" />
                     </div>
                     <div className="text-2xl font-bold text-gray-900">{property.propertyDetails.yearBuilt}</div>
                     <div className="text-sm text-gray-600">Year Built</div>
@@ -329,7 +333,7 @@ const PropertyDetails = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Amenities & Features</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {property.propertyAmenities.map((amenity, index) => (
-                    <motion.div 
+                    <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -358,12 +362,51 @@ const PropertyDetails = () => {
                 </motion.div>
               )}
 
+              {/* Media section  */}
+              {property.video?.youtube && (
+                <div className="">
+                  <h3 className="text-lg font-semibold mb-2">Property Video</h3>
+                  <div className="aspect-video ">
+                    <iframe
+                      className='rounded-lg border-2 border-amber-400 px-4 py-4'
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${getYoutubeVideoId(property.video.youtube)}`}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              )}
+              {/* Floor Plan / Map Section */}
+              {property.map?.googleMap && (
+                <div className="mt-6 ">
+                  <h3 className="text-lg font-semibold mb-2">Property Location</h3>
+                  <div className="w-full border-2 border-black/20 h-[400px] rounded-lg overflow-hidden shadow">
+                    <iframe
+                    className=''
+                      src={property.map.googleMap}
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              )}
+
+
+
               {/* What's Nearby */}
               <motion.div variants={itemVariants} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">What's Nearby</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {property.whatsNearby.map((place, index) => (
-                    <motion.div 
+                    <motion.div
                       key={index}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -382,7 +425,7 @@ const PropertyDetails = () => {
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 {/* Contact Card */}
-                <motion.div 
+                <motion.div
                   variants={itemVariants}
                   className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6"
                 >
@@ -395,7 +438,7 @@ const PropertyDetails = () => {
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Ready to Visit?</h3>
                     <p className="text-gray-600">Schedule a viewing today</p>
                   </div>
-                  
+
                   <div className="space-y-3">
                     <motion.button
                       whileHover={{ scale: 1.02 }}
@@ -405,7 +448,7 @@ const PropertyDetails = () => {
                       <Phone className="w-5 h-5 mr-2" />
                       Contact Agent
                     </motion.button>
-                    
+
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -418,7 +461,7 @@ const PropertyDetails = () => {
                 </motion.div>
 
                 {/* Property Info */}
-                <motion.div 
+                <motion.div
                   variants={itemVariants}
                   className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6"
                 >
@@ -447,7 +490,7 @@ const PropertyDetails = () => {
           </div>
         </div>
 
-        <SimilarProperties/>
+        <SimilarProperties />
       </div>
     </motion.div>
   );

@@ -3,6 +3,7 @@ import BuyingProcessSection from "../../components/home/BuyingProcessSection"
 import HeroSection from "../../components/home/HeroSection"
 import PropertyListing from "../../components/property/PropertyListing"
 import AboutSection from "@/components/about/AboutSection"
+import TestimonialSection from "@/components/common/TestimonialSection"
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <FeaturedProperties/>
         <BuyingProcessSection/>
         <AboutSection/>
+        <TestimonialSection/>
     </div>
   )
 }

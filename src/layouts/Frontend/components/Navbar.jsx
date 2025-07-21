@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
-import logo from "@/assets/logo.png"
+import logo from "@/assets/logo2.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
@@ -21,20 +21,20 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="bg-white backdrop-blur-md py-3 sticky top-0 z-50"
+      className="bg-white backdrop-blur-md  sticky top-0 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <motion.div className="flex items-center" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div className="" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to="/"
-              className="font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
+              className=""
             >
-              <img className="h-12 w-full" src={logo} alt="" />
+              <img className="h-14 w-full" src={logo} alt="" />
             </Link>
           </motion.div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
               >
                 <Link to={item.path}>
                   <motion.div
-                    className={`relative text-xl px-4 py-2 rounded-lg  font-medium transition-colors ${
+                    className={`relative text-lg px-4 py-2 rounded-lg  font-medium transition-colors ${
                       location.pathname === item.path ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
                     }`}
                     whileHover={{ scale: 1.05 }}
@@ -58,7 +58,7 @@ const Navbar = () => {
                     {item.name}
                     {location.pathname === item.path && (
                       <motion.div
-                        className="absolute inset-0 bg-blue-50 rounded-lg -z-10"
+                        className="absolute inset-0 bg-blue-200 rounded-lg -z-10"
                         layoutId="activeTab"
                         initial={false}
                         transition={{ type: "spring", stiffness: 500, damping: 30 }}

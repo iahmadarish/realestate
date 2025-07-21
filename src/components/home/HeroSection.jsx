@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
   return (
-    <section className="py-16 px-4">
-      <div className="container mx-auto max-w-7xl">
+    <section className=" px-4">
+      <div className="container mx-auto ">
         <div className="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-3xl overflow-hidden">
-          <div className="grid lg:grid-cols-2 items-center min-h-[500px]">
+          <div className="grid lg:grid-cols-2 items-center h-screen">
             {/* Left Content */}
             <div className="p-8 lg:p-16 space-y-8">
               <div className="space-y-6">
@@ -31,7 +31,7 @@ export default function HeroSection() {
             <div className="relative h-full min-h-[400px] lg:min-h-[500px]">
               <div className="absolute inset-0"></div>
               <img
-                src="https://png.pngtree.com/png-vector/20240201/ourmid/pngtree-modern-office-building-with-blue-glass-window-png-image_11529966.png"
+                src="https://www.rbhomesjaipur.com/assets/front/images/pngtree-real-estate-png-image_16490379.png"
                 alt="Modern office building"
                 className="w-full h-full object-cover object-center"
               />
