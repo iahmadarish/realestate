@@ -5,6 +5,7 @@ import PropertyListing from "../../components/property/PropertyListing"
 import AboutSection from "@/components/about/AboutSection"
 import TestimonialSection from "@/components/common/TestimonialSection"
 import ScrollToTop from "@/components/ScrollToTop"
+import RealEstateServices from "@/components/common/RealEstateServices"
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HeroSection/>
         <FeaturedProperties/>
         <BuyingProcessSection/>
+        <RealEstateServices/>
         <AboutSection/>
         <TestimonialSection/>
     </div>
