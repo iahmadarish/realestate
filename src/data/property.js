@@ -185,9 +185,9 @@ const property = [
     "Concierge", "Elevator", "Pet Friendly"
   ],
   "images": [
-    "https://images.unsplash.com/photo-1559599078-4b4c1b1fbd4b",
-    "https://images.unsplash.com/photo-1600585154042-3be47d9d321d",
-    "https://images.unsplash.com/photo-1615874959474-d609969a25f5"
+    "https://www.agentadvice.com/wp-content/uploads/2020/12/shutterstock_1247473441-scaled.jpg",
+    "https://www.mckissock.com/wp-content/uploads/2016/11/GettyImages-1151832961.jpg",
+    "https://cdn.prod.website-files.com/5e568633de93cd213bf81bf2/6297b151afe58286e5b0e1f7_coolest-pieces-of-real-estate-in-the-world-birgo-capital-blog-header-min.jpg"
   ],
   "video": {
     "youtube": "https://www.youtube.com/watch?v=BEACHFRONT_VIDEO_ID"
@@ -405,9 +405,9 @@ const property = [
     "Pet Friendly", "Lake View", "BBQ Grill", "Hot Tub"
   ],
   "images": [
-    "https://images.unsplash.com/photo-1617093725484-b7c662a9f97c",
-    "https://images.unsplash.com/photo-1615874959474-d609969a25f5",
-    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    "https://webneel.com/daily/sites/default/files/images/daily/08-2014/2-real-estate-photography.jpg",
+    "https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1280/https://media-production.lp-cdn.com/media/ujtvqirmbimhxwfck90e",
+    "https://blog.ruummedia.com/wp-content/uploads/2024/10/aerial_twilight_7-768x512.webp"
   ],
   "video": {
     "youtube": "https://www.youtube.com/watch?v=LAKEHOUSE_VIDEO_ID"
@@ -422,7 +422,7 @@ const property = [
   ],
   "floorPlan": {
     "description": "Single-level plan with master bedroom facing the lake, open kitchen, and cozy family room.",
-    "image": "https://images.unsplash.com/photo-1600585154442-bc6fe464abf4"
+    "image": "https://cdn6.aptoide.com/imgs/2/e/4/2e48fff526b7f12ff746669786f54194_screen.jpg"
   },
   "host": {
     "name": "Noah Green",
@@ -477,9 +477,9 @@ const property = [
     "Open Kitchen", "High-Speed Internet", "Central AC", "Pet Friendly"
   ],
   "images": [
-    "https://images.unsplash.com/photo-1600585153853-17d0fa46b1c5",
-    "https://images.unsplash.com/photo-1600585154448-cb7a5885e226",
-    "https://images.unsplash.com/photo-1600585154380-8f3d81f4f9b1"
+    "https://static.wixstatic.com/media/79cbaf_acf22ca48d0a4c048405fc42524ca37b~mv2.jpg/v1/fit/w_2500,h_1330,al_c/79cbaf_acf22ca48d0a4c048405fc42524ca37b~mv2.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5ee57f046820203400db0bbe/1624679073585-GZZKYR84ZYPSEUGCHVUA/dusk+to+dawn.jpeg",
+    "https://static.wixstatic.com/media/79cbaf_acf22ca48d0a4c048405fc42524ca37b~mv2.jpg/v1/fit/w_2500,h_1330,al_c/79cbaf_acf22ca48d0a4c048405fc42524ca37b~mv2.jpg"
   ],
   "video": {
     "youtube": "https://www.youtube.com/watch?v=TOWNHOUSE_VIDEO_ID"
@@ -494,7 +494,7 @@ const property = [
   ],
   "floorPlan": {
     "description": "Three-level layout with ground floor garage, main living area, and upper bedrooms.",
-    "image": "https://images.unsplash.com/photo-1600585154445-f2a77df8a4d9"
+    "image": "https://cdn6.aptoide.com/imgs/2/e/4/2e48fff526b7f12ff746669786f54194_screen.jpg"
   },
   "host": {
     "name": "Priya Mehta",
@@ -549,9 +549,9 @@ const property = [
     "Concierge", "Gym", "Rooftop Garden", "Secure Entry", "Elevator"
   ],
   "images": [
-    "https://images.unsplash.com/photo-1600585154448-cb7a5885e226",
-    "https://images.unsplash.com/photo-1599423300746-b62533397364",
-    "https://images.unsplash.com/photo-1600585154204-03b39543f104"
+    "https://images.squarespace-cdn.com/content/v1/5b7ca381f93fd4acdb957ba5/1621199199639-ZAZWXAOW0Y22ERBOQJNE/DJI_0857.jpg",
+    "https://webneel.com/daily/sites/default/files/images/daily/08-2014/2-real-estate-photography.jpg",
+    "https://freerangestock.com/sample/12653/real-estate.jpg"
   ],
   "video": {
     "youtube": "https://www.youtube.com/watch?v=CALGARY_RENTAL_VIDEO_ID"
@@ -566,7 +566,7 @@ const property = [
   ],
   "floorPlan": {
     "description": "Open-plan 1-bedroom unit with city-view balcony and separate living space.",
-    "image": "https://images.unsplash.com/photo-1600585154454-7c7c372a2c2e"
+    "image": "https://cdn6.aptoide.com/imgs/2/e/4/2e48fff526b7f12ff746669786f54194_screen.jpg"
   },
   "host": {
     "name": "Jordan Lee",
