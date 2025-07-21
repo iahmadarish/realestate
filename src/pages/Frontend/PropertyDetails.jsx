@@ -5,20 +5,16 @@ import propertyData from '../../data/property';
 import {
   ChevronLeft,
   MapPin,
-  Bed,
-  Bath,
   Square,
-  Calendar,
   CheckCircle,
   Eye,
   Heart,
   Share2,
   Phone,
   Mail,
-  Star,
-  Play
-} from 'lucide-react';
+  Star} from 'lucide-react';
 import SimilarProperties from '@/components/property/SimilarProperties';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const PropertyDetails = () => {
   const { slug } = useParams();
@@ -122,6 +118,7 @@ const PropertyDetails = () => {
       variants={containerVariants}
       className="min-h-screen bg-white"
     >
+      <ScrollToTop/>
       {/* Floating Header */}
       <motion.header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrollY > 100
@@ -167,14 +164,14 @@ const PropertyDetails = () => {
 
       <div className="relative">
         {/* Hero Section with Image Gallery */}
-        <motion.section variants={itemVariants} className="relative h-screen overflow-hidden">
+        <motion.section variants={itemVariants} className="relative md:lg:xl:2xl:sm:h-screen overflow-hidden">
           <div className="relative w-full h-full">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
                 src={property.images[currentImageIndex]}
                 alt={property.propertyTitle}
-                className="w-full h-full object-cover"
+                className="w-full h-full md:lg:xl:2xl:sm:object-cover object-contain"
                 initial={{ opacity: 0, scale: 1.1 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
@@ -229,19 +226,19 @@ const PropertyDetails = () => {
             </div>
 
             {/* Floating Action Buttons */}
-            <div className="absolute top-6 right-6 flex flex-col space-y-3">
+            <div className="absolute top-6 right-6 flex gap-x-2 md:lg:xl:2xl:sm:flex-col space-y-3">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsLiked(!isLiked)}
-                className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg border border-white/20"
+                className="md:lg:xl:2xl:sm:w-12 w-10 h-10 md:lg:xl:2xl:sm:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg border border-white/20"
               >
                 <Heart className={`w-6 h-6 ${isLiked ? 'text-red-500 fill-current' : 'text-gray-600'}`} />
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg border border-white/20"
+                className="md:lg:xl:2xl:sm:w-12 w-10 h-10 md:lg:xl:2xl:sm:h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg border border-white/20"
               >
                 <Share2 className="w-6 h-6 text-gray-600" />
               </motion.button>
@@ -250,15 +247,15 @@ const PropertyDetails = () => {
         </motion.section>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="container mx-auto font-family-heading px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content Column */}
             <div className="lg:col-span-2 space-y-8">
               {/* Property Header */}
-              <motion.div variants={itemVariants} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-                <div className="flex items-start justify-between mb-6">
+              <motion.div variants={itemVariants} className="bg-white rounded-2xl shadow-sm border border-gray-100 md:lg:xl:2xl:sm:p-8 p-4">
+                <div className="md:lg:xl:2xl:sm:flex items-start justify-between mb-6">
                   <div>
-                    <h1 className="text-3xl font-family-heading font-bold text-gray-900 mb-3 leading-tight">
+                    <h1 className="md:lg:xl:2xl:sm:text-3xl text-xl font-family-heading  text-gray-900 mb-3 leading-tight">
                       {property.propertyTitle}
                     </h1>
                     <div className="flex items-center text-gray-600 mb-4">
@@ -278,15 +275,15 @@ const PropertyDetails = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                  <div className="md:lg:xl:2xl:sm:text-right md:lg:xl:2xl:sm:mt-0 mt-6">
+                    <div className="md:lg:xl:2xl:sm:text-3xl text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
                       {formatPrice(property.propertyDetails.price, property.propertyDetails.currency)}
                     </div>
                   </div>
                 </div>
 
                 {/* Key Stats */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 bg-gray-50 rounded-xl">
+                <div className="grid grid-cols-2 md:grid-cols-4 md:lg:xl:2xl:sm:gap-6 gap-3 p-2 bg-gray-50 rounded-xl">
                   <div className="text-center">
                     <div className="w-18 h-18 border p-1 flex items-center justify-center mx-auto mb-3">
                       <img src="https://cdn3d.iconscout.com/3d/premium/thumb/living-room-3d-icon-download-in-png-blend-fbx-gltf-file-formats--house-home-furniture-isometric-pack-interiors-icons-5251967.png" alt="" />
@@ -338,10 +335,10 @@ const PropertyDetails = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.05 }}
-                      className="flex items-center p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200"
+                      className="flex items-center md:lg:xl:2xl:sm:p-3 p-2 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors duration-200"
                     >
-                      <CheckCircle className="w-5 h-5 mr-3 text-green-500" />
-                      <span className="text-gray-700 font-medium">{amenity}</span>
+                      <CheckCircle className="w-5 h-5 mr-3 text-black" />
+                      <span className="text-gray-700 md:lg:xl:2xl:sm:font-medium font-light text-sm">{amenity}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -413,6 +410,7 @@ const PropertyDetails = () => {
                       transition={{ delay: index * 0.1 }}
                       className="bg-gray-50 p-4 rounded-xl hover:bg-gray-100 transition-colors duration-200"
                     >
+                      <img src={place.image} className='' alt="near by location of this place" />
                       <h3 className="font-semibold text-gray-900 mb-1">{place.name}</h3>
                       <p className="text-sm text-gray-600">{place.type}</p>
                     </motion.div>
@@ -430,9 +428,9 @@ const PropertyDetails = () => {
                   className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6"
                 >
                   <div className="text-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <div className="w-8 h-8 bg-white rounded text-blue-600 flex items-center justify-center">
-                        <Phone className="w-4 h-4" />
+                    <div className="w-26 h-26 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="   text-blue-600 flex items-center justify-center">
+                        <img className='w-full h-full rounded-full' src="https://www.hollywoodreporter.com/wp-content/uploads/2023/03/Drew-Barrymore-Headshot-Publicity-H-2023.jpg?w=200&h=200&crop=1" alt="" />
                       </div>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Ready to Visit?</h3>

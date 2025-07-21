@@ -3,10 +3,12 @@
 import { motion } from "framer-motion"
 import { Bed, Bath, Square } from "lucide-react"
 import property from "../../data/property"
+import { Navigate, useNavigate } from "react-router-dom"
 
 const SimilarProperties = () => {
   // Get first 3 properties for similar properties
   const similarProperties = property.slice(0, 3)
+  const Navigate = useNavigate()
 
   // Format price function
   const formatPrice = (price, currency) => {
@@ -37,6 +39,12 @@ const SimilarProperties = () => {
       transition: { duration: 0.6, ease: "easeOut" },
     },
   }
+
+
+  const handleViewDetails = (slug) => {
+    Navigate(`/property/${slug}`);
+  };
+
 
   return (
     <motion.section
@@ -73,12 +81,16 @@ const SimilarProperties = () => {
         </motion.div>
 
         {/* Properties Grid */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div
+          className="grid lg:grid-cols-3 md:grid-cols-2 gap-8"
+        >
           {similarProperties.map((property, index) => (
             <motion.div
               key={property.propertyDetails.propertyId}
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
               variants={cardVariants}
+              onClick={() => handleViewDetails(property.slug)}
+
               whileHover={{
                 y: -8,
                 transition: { duration: 0.3, ease: "easeOut" },
@@ -96,6 +108,7 @@ const SimilarProperties = () => {
                 className="relative h-64 overflow-hidden"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
+
               >
                 <img
                   src={property.images[0] || "/placeholder.svg"}
@@ -106,9 +119,8 @@ const SimilarProperties = () => {
                 {/* Status Badge */}
                 <div className="absolute top-4 right-4">
                   <span
-                    className={`px-3 py-1 text-xs font-semibold rounded-full ${
-                      property.status === "For Sale" ? "bg-white text-gray-800" : "bg-white text-gray-800"
-                    }`}
+                    className={`px-3 py-1 text-xs font-semibold rounded-full ${property.status === "For Sale" ? "bg-white text-gray-800" : "bg-white text-gray-800"
+                      }`}
                   >
                     {property.status}
                   </span>

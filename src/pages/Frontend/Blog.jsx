@@ -3,6 +3,7 @@ import { Calendar, Clock, Eye, Heart, ArrowRight, Search } from 'lucide-react'
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import blog from "../../data/blog"
+import ScrollToTop from "@/components/ScrollToTop"
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("")
@@ -69,6 +70,7 @@ const Blog = () => {
 
   return (
     <div className="bg-white">
+      <ScrollToTop/>
       {/* Hero Section */}
       <motion.section
         className="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50"

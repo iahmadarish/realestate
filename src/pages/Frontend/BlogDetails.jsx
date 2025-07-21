@@ -3,6 +3,7 @@ import { Calendar, Clock, Eye, Heart, Share2, ArrowLeft, Facebook, Twitter, Link
 import { useState, useEffect } from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import blog from "../../data/blog"
+import ScrollToTop from "@/components/ScrollToTop"
 
 const BlogDetails = () => {
   const { slug } = useParams()
@@ -76,6 +77,7 @@ const BlogDetails = () => {
 
   return (
     <motion.div className="bg-white min-h-screen" variants={containerVariants} initial="hidden" animate="visible">
+      <ScrollToTop/>
       {/* Back Button */}
       <motion.div className="py-6 px-4 bg-gray-50 border-b" variants={itemVariants}>
         <div className="max-w-4xl mx-auto">
@@ -93,16 +95,16 @@ const BlogDetails = () => {
       </motion.div>
 
       {/* Hero Image */}
-      <motion.div className="relative h-96 overflow-hidden" variants={itemVariants}>
+      <motion.div className="relative md:lg:xl:2xl:sm:h-96 overflow-hidden" variants={itemVariants}>
         <img
           src={selectedBlog.image || "/placeholder.svg"}
           alt={selectedBlog.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full md:lg:xl:2xl:sm:object-cover "
         />
         <div className="absolute inset-0 bg-black/20"></div>
         {selectedBlog.featured && (
           <div className="absolute top-6 left-6">
-            <span className="bg-blue-600 text-white px-4 py-2 text-sm font-semibold rounded-full">Featured</span>
+            <span className="bg-blue-600 text-white px-4 py-2 text-sm font-semibold rounded">Featured</span>
           </div>
         )}
       </motion.div>
@@ -112,7 +114,7 @@ const BlogDetails = () => {
         {/* Article Header */}
         <motion.header className="mb-8" variants={itemVariants}>
           <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded font-medium">
               {selectedBlog.category}
             </span>
             <div className="flex items-center">
@@ -136,12 +138,12 @@ const BlogDetails = () => {
           <p className="text-xl text-gray-600 leading-relaxed mb-8">{selectedBlog.excerpt}</p>
 
           {/* Author Info */}
-          <div className="flex items-center justify-between">
+          <div className="flex md:lg:xl:2xl:sm:text-sm text-xs  gap-x-1 items-center justify-between">
             <div className="flex items-center">
               <img
                 src={selectedBlog.author.avatar || "/placeholder.svg"}
                 alt={selectedBlog.author.name}
-                className="w-12 h-12 rounded-full mr-4"
+                className="w-12 h-12 rounded md:lg:xl:2xl:sm:rounded-full mr-4"
               />
               <div>
                 <p className="font-semibold text-gray-900">{selectedBlog.author.name}</p>
@@ -205,7 +207,7 @@ const BlogDetails = () => {
 
         {/* Article Content */}
         <motion.div
-          className="prose prose-lg max-w-none mb-12"
+          className="prose prose-lg max-w-none space-y-3 mb-12"
           variants={itemVariants}
           dangerouslySetInnerHTML={{ __html: selectedBlog.content }}
         />
@@ -217,7 +219,7 @@ const BlogDetails = () => {
             {selectedBlog.tags.map((tag) => (
               <span
                 key={tag}
-                className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-200 cursor-pointer"
+                className="bg-gray-100 text-gray-700 px-3 py-2 rounded-full text-sm space-y-2 hover:bg-gray-200 cursor-pointer"
               >
                 {tag}
               </span>
@@ -239,7 +241,7 @@ const BlogDetails = () => {
                     <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-32 object-cover" />
                     <div className="p-4">
                       <h4 className="font-semibold text-gray-900 mb-2 line-clamp-2">{post.title}</h4>
-                      <p className="text-sm text-gray-600 line-clamp-2">{post.excerpt}</p>
+                      <p className="text-sm text-gray-600 line-clamp-2 my-6">{post.excerpt}</p>
                       <div className="flex items-center mt-3 text-xs text-gray-500">
                         <Clock className="w-3 h-3 mr-1" />
                         {post.readTime}

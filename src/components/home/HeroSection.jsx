@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className=" px-4">
       <div className="container mx-auto ">
         <div className="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-3xl overflow-hidden">
-          <div className="grid lg:grid-cols-2 items-center h-screen">
+          <div className="grid lg:grid-cols-2 items-center md:lg:xl:2xl:sm:h-screen">
             {/* Left Content */}
             <div className="p-8 lg:p-16 space-y-8">
               <div className="space-y-6">
@@ -28,12 +28,12 @@ export default function HeroSection() {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-full min-h-[400px] lg:min-h-[500px]">
+            <div className="relative h-full min-h-[300px] lg:min-h-[500px]">
               <div className="absolute inset-0"></div>
               <img
                 src="https://www.rbhomesjaipur.com/assets/front/images/pngtree-real-estate-png-image_16490379.png"
                 alt="Modern office building"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full md:lg:xl:2xl:sm:object-cover object-contain object-center"
               />
             </div>
           </div>

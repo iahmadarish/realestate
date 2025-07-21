@@ -10,7 +10,7 @@
 @theme inline {
   --font-family-small: "Open Sans", sans-serif;
   --font-family-medium: "IBM Plex Sans", sans-serif;
-  --font-family-heading: "Comfortaa", sans-serif;
+  --font-family-headings: "Comfortaa", sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

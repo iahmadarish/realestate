@@ -8,11 +8,12 @@ import "swiper/css/free-mode"
 import property from "../../data/property"
 import { FaBed, FaBath, FaRulerCombined } from "react-icons/fa"
 import { IoLocationSharp } from "react-icons/io5"
+import { useNavigate } from "react-router-dom"
 
 const FeaturedProperties = () => {
   // Filter only featured properties
   const featuredProperties = property.filter((prop) => prop.isFeatured)
-
+  const navigate = useNavigate()
   // Format price function
   const formatPrice = (price, currency) => {
     return new Intl.NumberFormat("en-CA", {
@@ -52,6 +53,11 @@ const FeaturedProperties = () => {
     },
   }
 
+  const handleViewDetails = (slug) => {
+    navigate(`/property/${slug}`);
+  };
+
+
   return (
     <motion.section
       className="py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden bg-white"
@@ -79,7 +85,7 @@ const FeaturedProperties = () => {
           >
             Featured Properties
           </motion.h2>
-          <motion.div 
+          <motion.div
             className="w-20 h-1 bg-indigo-600 mx-auto"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
@@ -88,9 +94,9 @@ const FeaturedProperties = () => {
         </motion.div>
 
         {/* Properties Swiper */}
-        <motion.div 
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }} 
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="relative"
         >
@@ -138,6 +144,8 @@ const FeaturedProperties = () => {
                 <motion.div
                   className="w-80 bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
                   variants={cardVariants}
+                  onClick={() => handleViewDetails(property.slug)}
+
                   whileHover={{
                     y: -8,
                     boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
@@ -167,11 +175,10 @@ const FeaturedProperties = () => {
                     {/* Status Badge */}
                     <div className="absolute top-4 left-4">
                       <span
-                        className={`px-3 py-1 text-xs font-semibold rounded-full shadow ${
-                          property.status === "For Sale" 
-                            ? "bg-green-100 text-green-800" 
-                            : "bg-blue-100 text-blue-800"
-                        }`}
+                        className={`px-3 py-1 text-xs font-semibold rounded-full shadow ${property.status === "For Sale"
+                          ? "bg-green-100 text-green-800"
+                          : "bg-blue-100 text-blue-800"
+                          }`}
                       >
                         {property.status}
                       </span>

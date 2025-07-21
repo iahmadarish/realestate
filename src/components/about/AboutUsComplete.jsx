@@ -309,37 +309,53 @@ const AboutUsComplete = () => {
 
       {/* Timeline Section */}
       <motion.section
-        className="py-16 px-4 bg-white"
+        className="py-12 md:py-16 px-4 bg-white"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto">
-          <motion.div className="text-center mb-12" variants={itemVariants}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
-            <p className="text-lg text-gray-600">
+          <motion.div className="text-center mb-8 md:mb-12" variants={itemVariants}>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Our Journey</h2>
+            <p className="text-base md:text-lg text-gray-600">
               Two decades of growth, innovation, and success in the real estate industry.
             </p>
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
+            {/* Timeline line - hidden on mobile, visible on md+ */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
+
+            {/* Mobile timeline line - visible only on mobile */}
+            <div className="md:hidden absolute left-6 transform w-1 h-full bg-blue-200"></div>
+
             {timeline.map((item, index) => (
               <motion.div
                 key={item.year}
-                className={`relative flex items-center mb-8 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+                className={`relative flex mb-8 md:mb-12 ${index % 2 === 0 ? "md:justify-start" : "md:justify-end"}`}
                 variants={itemVariants}
                 transition={{ delay: index * 0.2 }}
               >
-                <div className={`w-5/12 ${index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"}`}>
+                {/* Mobile layout (stacked) */}
+                <div className="md:hidden w-full pl-12">
+                  <div className="bg-white p-5 rounded-2xl shadow-lg">
+                    <div className="text-xl font-bold text-blue-600 mb-1">{item.year}</div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-1">{item.event}</h3>
+                    <p className="text-sm text-gray-600">{item.description}</p>
+                  </div>
+                  <div className="absolute left-6 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                </div>
+
+                {/* Desktop layout (alternating) */}
+                <div className={`hidden md:block w-full md:w-5/12 ${index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"}`}>
                   <div className="bg-white p-6 rounded-2xl shadow-lg">
                     <div className="text-2xl font-bold text-blue-600 mb-2">{item.year}</div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{item.event}</h3>
                     <p className="text-gray-600">{item.description}</p>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
               </motion.div>
             ))}
           </div>
@@ -356,7 +372,7 @@ const AboutUsComplete = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           <motion.div variants={itemVariants}>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Find Your Dream Property?</h2>
+            <h2 className="text-3xl md:text-4xl  font-family-headings text-white mb-6">Ready to Find Your Dream Property?</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Let our experienced team help you navigate the real estate market and find the perfect property for your
               needs.
@@ -369,7 +385,7 @@ const AboutUsComplete = () => {
               >
                 Get Started Today
               </motion.button>
-              <div className="flex items-center space-x-6 text-white">
+              <div className="md:lg:xl:2xl:sm:flex items-center space-y-4 space-x-6 text-white">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 mr-2" />
                   <span>(555) 123-4567</span>

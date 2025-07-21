@@ -51,16 +51,17 @@ const property = [
             "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106408.36583054936!2d-73.64109510917122!3d45.50604398760032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753061972859!5m2!1sen!2sbd"
         },
         "whatsNearby": [
-            { "name": "Walmart Supercenter", "type": "Supermarket" },
-            { "name": "Al Noor Mosque", "type": "Masjid" },
-            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall" }
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
-            "description": "Spacious open-plan layout with separate dining area and balcony access.",
+            "description": "A floor plan is a scaled diagram of a room or building viewed from above. The floor plan may depict an entire building, one floor of a building, or a single room. It may also include measurements, furniture, appliances, or anything else necessary to the purpose of the plan.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
             "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
             "contactEmail": "fanie@example.com",
             "languages": ["Arabic", "English", "French", "Spanish"]
         },
