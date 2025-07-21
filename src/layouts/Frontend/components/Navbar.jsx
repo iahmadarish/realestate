@@ -1,12 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import logo from "@/assets/logo2.png"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const [visible, setVisible] = useState(true)
   const location = useLocation()
 
   const navItems = [
@@ -19,27 +22,46 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        setVisible(false)
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up
+        setVisible(true)
+      }
+
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
+
   return (
     <motion.nav
-      className="bg-white backdrop-blur-md  sticky top-0 z-50"
+      className="bg-white backdrop-blur-md sticky top-0 z-50 shadow-sm"
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      animate={{ 
+        y: visible ? 0 : -100,
+        transition: { duration: 0.3, ease: "easeInOut" }
+      }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div className="" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link
-              to="/"
-              className=""
-            >
-              <img className="h-14 w-full" src={logo} alt="" />
+            <Link to="/" className="">
+              <img className="h-14 w-fit" src={logo} alt="" />
             </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden uppercase font-family-heading md:flex space-x-1">
+          <div className="hidden uppercase font-exo md:flex space-x-1">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -49,7 +71,7 @@ const Navbar = () => {
               >
                 <Link to={item.path}>
                   <motion.div
-                    className={`relative text-lg px-4 py-2 rounded-lg  font-medium transition-colors ${
+                    className={`relative text-md px-4 py-2 rounded-lg font-medium transition-colors ${
                       location.pathname === item.path ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
                     }`}
                     whileHover={{ scale: 1.05 }}

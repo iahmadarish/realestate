@@ -133,8 +133,8 @@ const AboutUsComplete = () => {
       >
         <div className="max-w-7xl mx-auto text-center">
           <motion.div variants={itemVariants}>
-            <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">About RealEstate</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6">Your Trusted Real Estate Partner</h1>
+            <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase ">About RealEstate</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mt-4 font-comfortaa mb-6">Your Trusted Real Estate Partner</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               For over two decades, we've been helping families and investors find their perfect properties. Our
               commitment to excellence and personalized service has made us the most trusted name in real estate.
@@ -203,7 +203,7 @@ const AboutUsComplete = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 + 0.3 }}
                   >
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-gray-600 mr-3" />
                     <span className="text-gray-700">{service}</span>
                   </motion.div>
                 ))}

@@ -3,12 +3,12 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white">
       <div className="container mx-auto px-10 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+          <div className="font-comfortaa">
             <h3 className="text-xl font-bold mb-4">RealEstate</h3>
             <p className="text-gray-300">Your trusted partner in finding the perfect property.</p>
           </div>
 
-          <div>
+          <div className="font-exo">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>

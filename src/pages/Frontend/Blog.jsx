@@ -78,7 +78,7 @@ const Blog = () => {
         initial="hidden"
         animate="visible"
       >
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto font-comfortaa text-center">
           <motion.div variants={itemVariants}>
             <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">Real Estate Insights</span>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6">Our Blog</h1>
@@ -97,7 +97,7 @@ const Blog = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto font-exo">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
             <motion.div className="relative flex-1 max-w-md" variants={itemVariants}>
@@ -152,11 +152,11 @@ const Blog = () => {
           viewport={{ once: true }}
         >
           <div className="max-w-7xl mx-auto">
-            <motion.h2 className="text-3xl font-bold text-gray-900 mb-8" variants={itemVariants}>
+            <motion.h2 className="text-3xl font-bold font-comfortaa text-gray-900 mb-8" variants={itemVariants}>
               Featured Articles
             </motion.h2>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 font-exo gap-8">
               {featuredBlogs.map((post, index) => (
                 <motion.article
                   key={post.id}
@@ -238,11 +238,11 @@ const Blog = () => {
         viewport={{ once: true }}
       >
         <div className="max-w-7xl mx-auto">
-          <motion.h2 className="text-3xl font-bold text-gray-900 mb-8" variants={itemVariants}>
+          <motion.h2 className="text-3xl font-comfortaa font-bold text-gray-900 mb-8" variants={itemVariants}>
             Latest Articles
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 font-exo lg:grid-cols-3 gap-8">
             {regularBlogs.map((post, index) => (
               <motion.article
                 key={post.id}

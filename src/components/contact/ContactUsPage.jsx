@@ -139,7 +139,7 @@ const ContactUsPage = () => {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white font-exo">
       {/* Hero Section */}
       <motion.section
         className="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50"
