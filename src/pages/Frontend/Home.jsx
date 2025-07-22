@@ -17,7 +17,6 @@ const Home = () => {
         <BuyingProcessSection/>
         <RealEstateServices/>
         <AboutSection/>
-        <DreamHomeLanding/>
         <TestimonialSection/>
     </div>
   )

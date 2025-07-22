@@ -23,7 +23,7 @@ const DreamHomeLanding = () => {
     };
 
     return (
-        <div className="min-h-screen overflow-hidden">
+        <div className=" overflow-hidden">
 
 
             <div className="relative z-10  bg-blue-700 rounded-2xl container mx-auto px-14 py-12">

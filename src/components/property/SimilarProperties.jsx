@@ -54,7 +54,7 @@ const SimilarProperties = () => {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         {/* Header */}
         <motion.div
           className="mb-12"

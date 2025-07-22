@@ -4,6 +4,12 @@ const property = [
         "propertyTitle": "Modern Villa with Panoramic City View – 25th Floor Luxury Condo in Montréal",
         "status": "For Sale",
         "propertyDescription": "This stunning modern villa located on the 25th floor offers a breathtaking panoramic view of downtown Montréal. With sleek finishes, large open-concept living space, and floor-to-ceiling windows, this home is ideal for urban luxury living.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "8367 W Flamingo Rd, Suite 101",
             "city": "Montréal",
@@ -48,7 +54,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106408.36583054936!2d-73.64109510917122!3d45.50604398760032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753061972859!5m2!1sen!2sbd"
+            "googleMap":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
         "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -80,6 +86,12 @@ const property = [
         "propertyTitle": "Luxury Loft with Lake View – Downtown Toronto Skyline Condo on 18th Floor",
         "status": "For Sale",
         "propertyDescription": "Experience upscale urban living in this chic 18th-floor loft in downtown Toronto, offering expansive views of Lake Ontario and the CN Tower. Designed with high ceilings, contemporary finishes, and smart home features, this loft is perfect for modern professionals or couples.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "1121 Bay St, Unit 1803",
             "city": "Toronto",
@@ -122,21 +134,22 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=1121+Bay+St,+Toronto"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0458007729576!2d-79.39105442382241!3d43.66801727110138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b1cc4bf89b%3A0x10a7c58151448d53!2s1121%20Bay%20St.%2C%20Toronto%2C%20ON%20M4Y%202R4%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753184124147!5m2!1sen!2sbd"
         },
-        "whatsNearby": [
-            { "name": "Metro Grocery", "type": "Supermarket" },
-            { "name": "Toronto General Hospital", "type": "Hospital" },
-            { "name": "Eaton Centre", "type": "Shopping Mall" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Modern open-plan loft with a large living area and private balcony.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Liam Chen",
-            "contactEmail": "liam.chen@example.com",
-            "languages": ["English", "Mandarin", "French"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "3 min walk",
@@ -154,6 +167,12 @@ const property = [
         "propertyTitle": "Elegant Beachfront Condo – 10th Floor Ocean View Apartment in Vancouver",
         "status": "For Sale",
         "propertyDescription": "Wake up to the sound of waves in this elegant beachfront condo with full-length glass windows facing the Pacific Ocean. Located on the 10th floor, this residence offers a blend of coastal serenity and city convenience with luxury interior details.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "450 Beach Ave, Unit 1007",
             "city": "Vancouver",
@@ -196,21 +215,22 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=450+Beach+Ave,+Vancouver"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0458007729576!2d-79.39105442382241!3d43.66801727110138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b1cc4bf89b%3A0x10a7c58151448d53!2s1121%20Bay%20St.%2C%20Toronto%2C%20ON%20M4Y%202R4%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753184124147!5m2!1sen!2sbd"
         },
-        "whatsNearby": [
-            { "name": "English Bay Beach", "type": "Beach" },
-            { "name": "Urban Fare", "type": "Supermarket" },
-            { "name": "Stanley Park", "type": "Park" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Open layout with ocean-facing living room, modern kitchen, and three spacious bedrooms.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Isabelle Dupont",
-            "contactEmail": "isabelle@example.com",
-            "languages": ["English", "French"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "7 min walk",
@@ -228,6 +248,12 @@ const property = [
         "propertyTitle": "Rustic Mountain Cabin with Forest Views – Private Retreat in Banff National Park",
         "status": "For Sale",
         "propertyDescription": "Escape to nature in this rustic yet luxurious mountain cabin nestled in Banff National Park. Surrounded by towering pines and wildlife, this peaceful retreat offers wooden interiors, a stone fireplace, and wrap-around deck views of the Rockies.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "16 Moraine Lake Rd",
             "city": "Banff",
@@ -272,19 +298,20 @@ const property = [
         "map": {
             "googleMap": "https://maps.google.com/?q=16+Moraine+Lake+Rd,+Banff"
         },
-        "whatsNearby": [
-            { "name": "Lake Louise", "type": "Lake" },
-            { "name": "Sunshine Village", "type": "Ski Resort" },
-            { "name": "Banff Upper Hot Springs", "type": "Hot Spring" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Two-level log cabin with a large open living area, chef’s kitchen, and separate guest suite.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Elijah Thompson",
-            "contactEmail": "elijah@example.com",
-            "languages": ["English"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "Not available",
@@ -301,6 +328,12 @@ const property = [
         "propertyTitle": "Spacious Suburban Family Home – Quiet Neighborhood in Ottawa",
         "status": "For Sale",
         "propertyDescription": "Located in a peaceful residential suburb of Ottawa, this spacious family home features a fenced backyard, two-car garage, and a fully finished basement. Ideal for families seeking comfort, safety, and easy access to schools and parks.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "3427 Riverbend Crescent",
             "city": "Ottawa",
@@ -345,19 +378,20 @@ const property = [
         "map": {
             "googleMap": "https://maps.google.com/?q=3427+Riverbend+Crescent,+Ottawa"
         },
-        "whatsNearby": [
-            { "name": "Longfields High School", "type": "School" },
-            { "name": "Walmart Barrhaven", "type": "Supermarket" },
-            { "name": "Stonecrest Park", "type": "Park" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Two-story layout with four bedrooms upstairs, open kitchen-living-dining area, and home office.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Kaitlyn Smith",
-            "contactEmail": "kaitlyn@example.com",
-            "languages": ["English", "French"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "10 min drive",
@@ -375,6 +409,12 @@ const property = [
         "propertyTitle": "Charming Lakehouse Retreat – Waterfront Property in Muskoka",
         "status": "For Sale",
         "propertyDescription": "This charming lakehouse in Muskoka is a private sanctuary with direct access to the lake, its own dock, and breathtaking sunset views. Perfect for nature lovers, boaters, and anyone seeking a quiet escape.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "88 Lakeshore Dr",
             "city": "Muskoka",
@@ -418,19 +458,20 @@ const property = [
         "map": {
             "googleMap": "https://maps.google.com/?q=88+Lakeshore+Dr,+Muskoka"
         },
-        "whatsNearby": [
-            { "name": "Lake Joseph Golf Club", "type": "Recreation" },
-            { "name": "Port Carling", "type": "Town Center" },
-            { "name": "Sherwood Inn Spa", "type": "Spa" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Single-level plan with master bedroom facing the lake, open kitchen, and cozy family room.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Noah Green",
-            "contactEmail": "noah@example.com",
-            "languages": ["English"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "Not applicable",
@@ -448,6 +489,12 @@ const property = [
         "propertyTitle": "Modern Townhouse with Private Garage – Prime Location in Mississauga",
         "status": "For Sale",
         "propertyDescription": "This sleek 3-bedroom townhouse is located in the heart of Mississauga and features a modern kitchen, private garage, rooftop terrace, and excellent transit connectivity. Great for young families or first-time buyers.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "2195 Sheridan Park Dr",
             "city": "Mississauga",
@@ -491,19 +538,20 @@ const property = [
         "map": {
             "googleMap": "https://maps.google.com/?q=2195+Sheridan+Park+Dr,+Mississauga"
         },
-        "whatsNearby": [
-            { "name": "Erindale GO Station", "type": "Transit" },
-            { "name": "Erin Mills Town Centre", "type": "Shopping" },
-            { "name": "Credit Valley Hospital", "type": "Hospital" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Three-level layout with ground floor garage, main living area, and upper bedrooms.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Priya Mehta",
-            "contactEmail": "priya@example.com",
-            "languages": ["English", "Hindi", "Punjabi"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "2 min walk",
@@ -521,6 +569,12 @@ const property = [
         "propertyTitle": "Furnished 1-Bedroom Rental – Downtown Calgary High-Rise",
         "status": "For Rent",
         "propertyDescription": "A fully-furnished, modern 1-bedroom rental apartment located in a secure high-rise tower in downtown Calgary. Ideal for business travelers, students, or couples looking for short- or long-term stays.",
+        "galarry": [
+              "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/31.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/32.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg",
+            "https://tunatheme.com/tf/html/quarter-preview/quarter/img/img-slide/33.jpg"
+        ],
         "propertyLocation": {
             "address": "104 5th Ave SW",
             "city": "Calgary",
@@ -564,19 +618,20 @@ const property = [
         "map": {
             "googleMap": "https://maps.google.com/?q=104+5th+Ave+SW,+Calgary"
         },
-        "whatsNearby": [
-            { "name": "Stephen Avenue Walk", "type": "Attraction" },
-            { "name": "Core Shopping Centre", "type": "Mall" },
-            { "name": "City Hall LRT Station", "type": "Transit" }
+      "whatsNearby": [
+            { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
+            { "name": "Al Noor Mosque", "type": "Masjid", "image":"https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg" },
+            { "name": "Bay Terrace Shopping Mall", "type": "Shopping Mall", "image": "https://bayterrace.com/wp-content/uploads/2023/04/Restaurant-Row-at-Bay-Terrace-Brochure.jpg" }
         ],
         "floorPlan": {
             "description": "Open-plan 1-bedroom unit with city-view balcony and separate living space.",
             "image": "https://3dplans.com/wp-content/uploads/6_the-landing-at-1001-np_2g_type-b.png"
         },
         "host": {
-            "name": "Jordan Lee",
-            "contactEmail": "jordan@example.com",
-            "languages": ["English", "Korean"]
+            "name": "Fanie Villemaire",
+            "image": "https://cdn.24.co.za/files/Cms/General/d/10971/faffc65fd0704d78b37dd4ea85d12512.jpg",
+            "contactEmail": "fanie@example.com",
+            "languages": ["Arabic", "English", "French", "Spanish"]
         },
         "proximity": {
             "metro": "2 min walk",
