@@ -113,8 +113,7 @@ const RealEstateServices = () => {
                             key={index}
                             variants={cardVariants}
                             whileHover="hover"
-                            className="bg-white shadow-[0px_1px_8px_6px_#fcecdc]
- rounded-3xl p-8  border border-gray-100 cursor-pointer group"
+                            className="bg-white shadow-[0px_0px_10px_1px_#8a8484] rounded-3xl p-8  border border-gray-100 cursor-pointer group"
                             style={{ willChange: 'transform' }}
                         >
                             {/* Icon Section */}

@@ -6,6 +6,7 @@ import AboutSection from "@/components/about/AboutSection"
 import TestimonialSection from "@/components/common/TestimonialSection"
 import ScrollToTop from "@/components/ScrollToTop"
 import RealEstateServices from "@/components/common/RealEstateServices"
+import DreamHomeLanding from "@/components/common/DreamHomeLanding"
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <BuyingProcessSection/>
         <RealEstateServices/>
         <AboutSection/>
+        <DreamHomeLanding/>
         <TestimonialSection/>
     </div>
   )

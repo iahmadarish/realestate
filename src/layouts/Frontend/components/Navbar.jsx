@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="bg-white backdrop-blur-md sticky top-0 z-50 shadow-sm"
+      className="bg-white backdrop-blur-md sticky top-0 z-50 "
       initial={{ y: -100 }}
       animate={{ 
         y: visible ? 0 : -100,
