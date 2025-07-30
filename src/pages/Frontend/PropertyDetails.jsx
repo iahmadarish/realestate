@@ -200,7 +200,7 @@ const PropertyDetails = () => {
             whileHover={{ scale: 1.1, x: -5 }}
             whileTap={{ scale: 0.9 }}
             onClick={prevImage}
-            className="absolute left-6 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 shadow-xl border border-white/20"
+            className="absolute left-6 top-1/2 transform -translate-y-1/2 sm:w-14 sm:h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 shadow-xl border border-white/20"
           >
             <ChevronLeft className="w-6 h-6" />
           </motion.button>
@@ -209,7 +209,7 @@ const PropertyDetails = () => {
             whileHover={{ scale: 1.1, x: 5 }}
             whileTap={{ scale: 0.9 }}
             onClick={nextImage}
-            className="absolute right-6 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 shadow-xl border border-white/20"
+            className="absolute right-6 top-1/2 transform -translate-y-1/2 sm:w-14  sm:h-14  bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 shadow-xl border border-white/20"
           >
             <ChevronRight className="w-6 h-6" />
           </motion.button>
@@ -233,7 +233,7 @@ const PropertyDetails = () => {
               <motion.span
                 initial={{ scale: 0, rotate: -10 }}
                 animate={{ scale: 1, rotate: 0 }}
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full shadow-xl border-2 border-white/20"
+                className="bg-gradient-to-r from-blue-400 to-indigo-500 text-white text-xs sm:text-sm sm:font-bold px-4 py-2 rounded-lg shadow-xl border-2 border-white/20"
               >
                 ✨ Featured
               </motion.span>
@@ -241,7 +241,7 @@ const PropertyDetails = () => {
             <motion.span
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="bg-white/95 backdrop-blur-sm text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow-xl border border-white/20"
+              className="bg-white/95 backdrop-blur-sm text-gray-800 text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg shadow-xl border border-white/20"
             >
               {property.status}
             </motion.span>
@@ -271,13 +271,13 @@ const PropertyDetails = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl px-6 py-4 shadow-2xl border border-white/20"
+            className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md rounded px-3 sm:px-6 py-2 sm:py-4 shadow-2xl border border-white/20"
           >
             <div className="text-right">
-              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <div className="text-sm sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 {formatPrice(property.propertyDetails.price, property.propertyDetails.currency)}
               </div>
-              <div className="text-sm text-gray-600 font-medium">Starting Price</div>
+              <div className="sm:text-sm text-xs text-gray-600 font-medium">Starting Price</div>
             </div>
           </motion.div>
         </div>
@@ -297,12 +297,12 @@ const PropertyDetails = () => {
               <div className="p-6 sm:p-8">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8">
                   <div className="flex-1">
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                    <h1 className="text-xl font-nunito sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                       {property.propertyTitle}
                     </h1>
                     <div className="flex items-center text-gray-600 mb-6">
                       <MapPin className="w-5 h-5 mr-3 text-blue-500" />
-                      <span className="text-lg">
+                      <span className="sm:text-lg text-sm">
                         {property.propertyLocation.address}, {property.propertyLocation.city},{" "}
                         {property.propertyLocation.country}
                       </span>
@@ -310,7 +310,7 @@ const PropertyDetails = () => {
                     <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500">
                       <div className="flex items-center bg-gray-50 px-3 py-2 rounded-full">
                         <Eye className="w-4 h-4 mr-2 text-blue-500" />
-                        <span className="font-medium">{property.views || 0} views</span>
+                        <span className="sm:font-medium">{property.views || 0} views</span>
                       </div>
                       <div className="flex items-center bg-gray-50 px-3 py-2 rounded-full">
                         <Star className="w-4 h-4 mr-2 text-yellow-400 fill-current" />

@@ -105,7 +105,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+    <section className="py-16 sm:px-4 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <motion.div
         className="max-w-7xl mx-auto"
         variants={containerVariants}
@@ -116,13 +116,13 @@ const TestimonialSection = () => {
         {/* Header */}
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            className="text-2xl sm:text-5xl font-bold text-gray-900 mb-4"
             variants={itemVariants}
           >
             What Our Clients Say
           </motion.h2>
           <motion.p 
-            className="text-xl text-gray-600 max-w-2xl mx-auto"
+            className="sm:text-xl text-sm text-gray-600 max-w-2xl mx-auto"
             variants={itemVariants}
           >
             Don't just take our word for it. Here's what our satisfied clients have to say about their real estate journey with us.
@@ -136,7 +136,7 @@ const TestimonialSection = () => {
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
-          <div className="relative h-96 md:h-80">
+          <div className="relative h-116 md:h-80">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}
@@ -149,7 +149,7 @@ const TestimonialSection = () => {
                 <div className="flex flex-col md:flex-row h-full">
                   {/* Image Side */}
                   <div className="md:w-1/3 h-48 md:h-full relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-20 z-10"></div>
+                    <div className="absolute inset-0  opacity-20 z-10"></div>
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -161,14 +161,14 @@ const TestimonialSection = () => {
                   </div>
 
                   {/* Content Side */}
-                  <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+                  <div className="md:w-2/3 p-4 md:p-12 flex flex-col justify-center">
                     <div className="flex items-center mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                       ))}
                     </div>
                     
-                    <blockquote className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                    <blockquote className="text-sm md:text-xl text-gray-700 mb-6 leading-relaxed">
                       "{testimonial.text}"
                     </blockquote>
                     
@@ -264,7 +264,7 @@ const TestimonialSection = () => {
           variants={itemVariants}
         >
           <motion.button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition-all duration-300"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition-all duration-300"
             whileHover={{ 
               scale: 1.05,
               boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"

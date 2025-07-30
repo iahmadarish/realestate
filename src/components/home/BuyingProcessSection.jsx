@@ -34,15 +34,15 @@ export default function BuyingProcessSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-orange-500 font-medium text-sm tracking-wider uppercase mb-4">OUR PROCESS</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Process of Buying</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">Process of Buying</h2>
         </div>
 
         {/* Steps Grid */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 sm:gap-8">
           {steps.map((step) => {
             const Icon = step.icon
             return (
-              <div key={step.id} className="bg-white rounded-lg p-8 text-center">
+              <div key={step.id} className="bg-white rounded-lg sm:p-8 p-4 border border-gray-400 text-center">
                 {/* Step Number */}
                 <div className="text-left mb-6">
                   <span className="text-gray-400 text-sm font-medium">Step-{step.id}</span>

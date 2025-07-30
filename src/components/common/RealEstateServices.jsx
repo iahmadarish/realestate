@@ -96,16 +96,16 @@ const RealEstateServices = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-16 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white sm:py-16 sm:px-4">
             <motion.div
-                className="container px-16 mx-auto"
+                className="container sm:px-16 mx-auto"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
                 viewport={{ once: true }}
             >
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8"
                     variants={containerVariants}
                 >
                     {services.map((service, index) => (

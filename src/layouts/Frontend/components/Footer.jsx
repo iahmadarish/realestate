@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-black">© 2024 RealEstate. All rights reserved.</p>
+          <p className="text-black">© 2025 RealEstate. Design and developed by <a className="text-blue-700" href="https://conqueric.com/"> CONQUERIC</a></p>
         </div>
       </div>
     </footer>

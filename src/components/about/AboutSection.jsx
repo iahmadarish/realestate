@@ -65,7 +65,7 @@ const AboutSection = () => {
 
             {/* Feature 1 - Image Left, Text Right */}
             <motion.div
-              className="flex items-start space-x-6"
+              className="flex items-start space-x-2"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
@@ -83,8 +83,8 @@ const AboutSection = () => {
 
               {/* Feature Content */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Advanced Property Search</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="sm:text-xl text-lg font-bold text-gray-900 mb-3">Advanced Property Search</h3>
+                <p className="text-gray-600 sm:leading-relaxed sm:text-lg text-sm">
                   Easily find properties based on location, price, size, and amenities with our intuitive search
                   filters.
                 </p>
@@ -100,8 +100,8 @@ const AboutSection = () => {
             >
               {/* Feature Content */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Real-Time Market Insights</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="sm:text-xl text-lg font-bold text-gray-900 mb-3">Real-Time Market Insights</h3>
+                <p className="text-gray-600 leading-relaxed sm:text-lg text-sm">
                   Get up-to-date market trends, property values, and investment insights to make informed decisions.
                 </p>
               </div>
@@ -131,18 +131,18 @@ const AboutSection = () => {
               <img
                 src={image2}
                 alt="Modern house with outdoor seating"
-                className="w-full h-[500px] object-cover"
+                className="w-full sm:h-[500px] sm:object-cover"
               />
             </div>
 
             {/* Statistics Overlay - Bottom Right */}
             <motion.div
-              className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg"
+              className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl sm:p-6 p-2 shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <div className="grid grid-cols-3 gap-8">
+              <div className="sm:block  grid grid-cols-1 gap-2 sm:gap-8">
                 {stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}
@@ -151,7 +151,7 @@ const AboutSection = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.1 + 0.8, duration: 0.5, type: "spring" }}
                   >
-                    <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
+                    <div className="sm:text-2xl text-xs md:text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
                     <p className="text-xs text-gray-600 font-medium whitespace-nowrap">{stat.label}</p>
                   </motion.div>
                 ))}
