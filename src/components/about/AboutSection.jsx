@@ -43,7 +43,7 @@ const AboutSection = () => {
 
   return (
     <motion.section
-      className="py-16 px-4 bg-white"
+      className="py-16 px-4 bg-white font-nunito"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

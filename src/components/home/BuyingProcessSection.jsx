@@ -29,7 +29,7 @@ export default function BuyingProcessSection() {
   ]
 
   return (
-    <section className="py-20 bg-stone-50">
+    <section className="py-20 bg-stone-50 font-nunito">
       <div className="container mx-auto px-4 ">
         {/* Header */}
         <div className="text-center mb-16">

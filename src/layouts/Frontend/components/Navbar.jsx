@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="bg-white backdrop-blur-md sticky top-0 z-50 "
+      className="bg-white backdrop-blur-md sticky top-0 z-60 "
       initial={{ y: -100 }}
       animate={{ 
         y: visible ? 0 : -100,
@@ -139,7 +139,7 @@ const Navbar = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="md:hidden"
+              className="md:hidden "
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}

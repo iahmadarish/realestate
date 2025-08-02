@@ -105,7 +105,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-16 sm:px-4 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+    <section className="py-16 sm:px-4 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen font-nunito">
       <motion.div
         className="max-w-7xl mx-auto"
         variants={containerVariants}

@@ -130,14 +130,17 @@ const PropertyDetails = () => {
       <ScrollToTop />
 
       {/* Enhanced Floating Header */}
-      <motion.header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrollY > 100 ? "bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-100" : "bg-transparent"
-          }`}
-        style={{
-          transform: `translateY(${scrollY > 100 ? "0" : "-20px"})`,
-          opacity: scrollY > 100 ? 1 : 0,
-        }}
-      >
+    <motion.header
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+    scrollY > 100 
+      ? "bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-100" 
+      : "bg-transparent pointer-events-none"
+  }`}
+  style={{
+    transform: `translateY(${scrollY > 100 ? "0" : "-20px"})`,
+    opacity: scrollY > 100 ? 1 : 0,
+  }}
+>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <motion.button
@@ -474,7 +477,7 @@ const PropertyDetails = () => {
                       </div>
                       <div className="h-96 sm:h-[500px]">
                         <iframe
-                          src={property.map.map}
+                          src={property.map.googleMap}
                           width="100%"
                           height="100%"
                           style={{ border: 0 }}
@@ -487,7 +490,7 @@ const PropertyDetails = () => {
                   )}
 
                   {/* What's Nearby */}
-                  <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-6 sm:p-8">
+                  <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-4 sm:p-8">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8">What's Nearby</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                       {property.whatsNearby.map((place, index) => (
@@ -498,7 +501,7 @@ const PropertyDetails = () => {
                           transition={{ delay: index * 0.1 }}
                           className="group cursor-pointer"
                         >
-                          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+                          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl sm:p-6 hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                             <div className="w-full h-32 bg-gray-200 rounded-xl mb-4 overflow-hidden">
                               <img
                                 src={place.image || "/placeholder.svg"}

@@ -134,7 +134,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0458007729576!2d-79.39105442382241!3d43.66801727110138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b1cc4bf89b%3A0x10a7c58151448d53!2s1121%20Bay%20St.%2C%20Toronto%2C%20ON%20M4Y%202R4%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753184124147!5m2!1sen!2sbd"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -215,7 +215,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0458007729576!2d-79.39105442382241!3d43.66801727110138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b1cc4bf89b%3A0x10a7c58151448d53!2s1121%20Bay%20St.%2C%20Toronto%2C%20ON%20M4Y%202R4%2C%20Canada!5e0!3m2!1sen!2sbd!4v1753184124147!5m2!1sen!2sbd"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -296,7 +296,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=16+Moraine+Lake+Rd,+Banff"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -376,7 +376,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=3427+Riverbend+Crescent,+Ottawa"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -456,7 +456,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=88+Lakeshore+Dr,+Muskoka"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -536,7 +536,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=2195+Sheridan+Park+Dr,+Mississauga"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },
@@ -616,7 +616,7 @@ const property = [
             "youtube": "https://youtu.be/lpzEd8gpWVM?si=Bqk0YD9BBi9Xay1P"
         },
         "map": {
-            "googleMap": "https://maps.google.com/?q=104+5th+Ave+SW,+Calgary"
+            "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.446661458964!2d90.39473484809878!3d23.79683906078778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71395aaea33%3A0x4b9aae15e3cd2498!2sSainik%20Club%20Cinema%20Hall!5e0!3m2!1sen!2sbd!4v1753184250268!5m2!1sen!2sbd"
         },
       "whatsNearby": [
             { "name": "Walmart Supercenter", "type": "Supermarket", "image": "https://amazingdestinationsltd.com/wp-content/uploads/2024/02/amazing-destinations-photo-gallery-senior-trip-walmart-supercenter-01.jpg" },

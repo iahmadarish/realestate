@@ -60,7 +60,7 @@ const FeaturedProperties = () => {
 
   return (
     <motion.section
-      className="py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden bg-white"
+      className="py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden bg-white font-nunito"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
