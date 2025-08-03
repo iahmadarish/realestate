@@ -7,16 +7,18 @@ import TestimonialSection from "@/components/common/TestimonialSection"
 import ScrollToTop from "@/components/ScrollToTop"
 import RealEstateServices from "@/components/common/RealEstateServices"
 import DreamHomeLanding from "@/components/common/DreamHomeLanding"
+import CommonContact from "@/components/contact/commonContact"
 
 const Home = () => {
   return (
-    <div className="container font-exo mx-auto px-4 py-8">
+    <div className="container font-exo mx-auto  py-8">
       <ScrollToTop/>
       <HeroSection/>
         <FeaturedProperties/>
         <BuyingProcessSection/>
         <RealEstateServices/>
         <AboutSection/>
+        <CommonContact/>
         <TestimonialSection/>
     </div>
   )
