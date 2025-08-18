@@ -70,7 +70,7 @@ const RealEstateServices = () => {
             title: "Buy a home",
             description: "Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.",
             buttonText: "Browse Property",
-            icon: "https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-agent-lg-1.webp",
+            icon: "/icons/home1.jpg",
             gradient: "from-green-400 to-blue-500",
             iconColor: "text-green-600",
             bgColor: "bg-green-50"
@@ -79,19 +79,19 @@ const RealEstateServices = () => {
             title: "Sell a home",
             description: "No matter what path you take to sell your home, we can help you navigate a successful sale.",
             buttonText: "See your options",
-            icon: "https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-sell-lg-1.webp",
+            icon: "/icons/home1.jpg",
             gradient: "from-orange-400 to-red-500",
             iconColor: "text-orange-600",
-            bgColor: "bg-orange-50"
+            bgColor: "bg-green-50"
         },
         {
             title: "Rent a home",
             description: "We're creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.",
             buttonText: "Find rentals",
-            icon: "https://www.zillowstatic.com/bedrock/app/uploads/sites/5/2024/04/homepage-spot-rent-lg-1.webp",
+            icon: "/icons/home1.jpg",
             gradient: "from-purple-400 to-pink-500",
             iconColor: "text-purple-600",
-            bgColor: "bg-purple-50"
+            bgColor: "bg-green-50"
         }
     ];
 

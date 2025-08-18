@@ -4,6 +4,12 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useParams, useNavigate } from "react-router-dom"
 import propertyData from "../../data/property"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 import {
   ChevronLeft,
   MapPin,
@@ -130,17 +136,16 @@ const PropertyDetails = () => {
       <ScrollToTop />
 
       {/* Enhanced Floating Header */}
-    <motion.header
-  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-    scrollY > 100 
-      ? "bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-100" 
-      : "bg-transparent pointer-events-none"
-  }`}
-  style={{
-    transform: `translateY(${scrollY > 100 ? "0" : "-20px"})`,
-    opacity: scrollY > 100 ? 1 : 0,
-  }}
->
+      <motion.header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrollY > 100
+          ? "bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-100"
+          : "bg-transparent pointer-events-none"
+          }`}
+        style={{
+          transform: `translateY(${scrollY > 100 ? "0" : "-20px"})`,
+          opacity: scrollY > 100 ? 1 : 0,
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <motion.button
@@ -290,17 +295,17 @@ const PropertyDetails = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
           {/* Main Content - Enhanced */}
-          <div className="xl:col-span-3 space-y-8">
+          <div className="xl:col-span-3 space-y-2">
             {/* Property Header with Tabs */}
             <motion.div
               variants={itemVariants}
-              className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden"
+              className="bg-white rounded-3xl  border border-gray-100 overflow-hidden"
             >
               {/* Header Content */}
-              <div className="p-6 sm:p-8">
-                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8">
+              <div className="p-1 sm:p-8">
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-1 sm:mb-8">
                   <div className="flex-1">
-                    <h1 className="text-xl font-nunito sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                    <h1 className="text-lg font-nunito sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                       {property.propertyTitle}
                     </h1>
                     <div className="flex items-center text-gray-600 mb-6">
@@ -324,7 +329,7 @@ const PropertyDetails = () => {
                 </div>
 
                 {/* Enhanced Key Stats */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-6">
                   {[
                     {
                       icon: Bed,
@@ -403,14 +408,14 @@ const PropertyDetails = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="bg-white rounded-3xl shadow-xl border border-gray-100 p-6 sm:p-8"
+                    className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 sm:p-8"
                   >
                     <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                       <Home className="w-6 h-6 mr-3 text-blue-500" />
                       About This Property
                     </h2>
                     <div className="prose prose-lg max-w-none">
-                      <p className="text-gray-700 leading-relaxed text-lg">{property.propertyDescription}</p>
+                      <p className="text-gray-700 leading-relaxed sm:text-lg text-xs">{property.propertyDescription}</p>
                     </div>
                   </motion.div>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -433,13 +438,15 @@ const PropertyDetails = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className="bg-white rounded-3xl shadow-xl border border-gray-100 p-6 sm:p-8"
+                  className="bg-white rounded shadow-xl border border-gray-100 p-2 sm:p-8"
                 >
                   <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
                     <CheckCircle className="w-6 h-6 mr-3 text-green-500" />
                     Amenities & Features
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                  {/* Desktop Grid View */}
+                  <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {property.propertyAmenities.map((amenity, index) => (
                       <motion.div
                         key={index}
@@ -454,6 +461,42 @@ const PropertyDetails = () => {
                         <span className="text-gray-700 font-medium">{amenity}</span>
                       </motion.div>
                     ))}
+                  </div>
+
+                  {/* Mobile Swiper View */}
+                  <div className="sm:hidden">
+                    <Swiper
+                      slidesPerView={2}
+                      spaceBetween={14}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Pagination]}
+                      className="amenities-swiper"
+                    >
+                      {[...Array(Math.ceil(property.propertyAmenities.length / 2))].map((_, slideIndex) => (
+                        <SwiperSlide key={slideIndex}>
+                          <div className="grid grid-cols-1 gap-4 p-2">
+                            {property.propertyAmenities
+                              .slice(slideIndex * 2, (slideIndex + 1) * 2)
+                              .map((amenity, index) => (
+                                <motion.div
+                                  key={index}
+                                  initial={{ opacity: 0, scale: 0.9 }}
+                                  animate={{ opacity: 1, scale: 1 }}
+                                  transition={{ delay: index * 0.05 }}
+                                  className="flex items-center p-2  rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group"
+                                >
+                                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mr-2 group-hover:scale-110 transition-transform duration-300">
+                                    <CheckCircle className="w-4 h-4 text-white" />
+                                  </div>
+                                  <span className="text-xs text-gray-700 font-medium">{amenity}</span>
+                                </motion.div>
+                              ))}
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
                   </div>
                 </motion.div>
               )}

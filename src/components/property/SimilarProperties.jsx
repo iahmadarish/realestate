@@ -54,7 +54,7 @@ const SimilarProperties = () => {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Header */}
         <motion.div
           className="mb-12"
@@ -137,7 +137,7 @@ const SimilarProperties = () => {
                 {/* Property Name and Price */}
                 <div className="mb-4">
                   <motion.h3
-                    className="text-xl font-bold text-gray-900 mb-1"
+                    className="text-xl font-semibold text-gray-900 mb-1"
                     whileHover={{ color: "#3B82F6" }}
                     transition={{ duration: 0.2 }}
                   >
@@ -151,7 +151,7 @@ const SimilarProperties = () => {
                           ? "Luxury Properties"
                           : "Bungalow"}
                     </span>
-                    <span className="text-2xl font-bold text-gray-900">
+                    <span className="text-xl font-light text-orange-500">
                       {formatPrice(property.propertyDetails.price, property.propertyDetails.currency)}
                     </span>
                   </div>
