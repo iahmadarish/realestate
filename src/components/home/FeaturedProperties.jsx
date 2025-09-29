@@ -66,7 +66,7 @@ const FeaturedProperties = () => {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         {/* Header */}
         <motion.div className="mb-12 text-center" variants={headerVariants}>
           <motion.p
@@ -110,10 +110,10 @@ const FeaturedProperties = () => {
               sensitivity: 1,
               releaseOnEdges: true,
             }}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 5000,
+            //   disableOnInteraction: false,
+            // }}
             grabCursor={true}
             className="!overflow-visible !pb-2"
             breakpoints={{

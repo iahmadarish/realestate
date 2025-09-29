@@ -96,7 +96,7 @@ const RealEstateServices = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white sm:py-16 sm:px-4">
+        <div className="min-h-screen bg-white sm:py-16 sm:px-4 px-4">
             <motion.div
                 className="container sm:px-16 mx-auto"
                 variants={containerVariants}
@@ -113,12 +113,12 @@ const RealEstateServices = () => {
                             key={index}
                             variants={cardVariants}
                             whileHover="hover"
-                            className="bg-white shadow-[0px_0px_10px_1px_#8a8484] rounded-3xl p-8  border border-gray-100 cursor-pointer group"
+                            className="bg-white md:shadow-[0px_0px_10px_1px_#8a8484] shadow-[0px_0px_5px_1px_#022f3d] rounded p-8  border border-gray-100 cursor-pointer group"
                             style={{ willChange: 'transform' }}
                         >
                             {/* Icon Section */}
                             <motion.div
-                                className={`w-30 h-30 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6 mx-auto`}
+                                className={`w-30 h-30 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6 mx-auto bg-[#]`}
                                 variants={iconVariants}
                             >
                                 <img src={service.icon} alt="" />
@@ -136,7 +136,7 @@ const RealEstateServices = () => {
                                 </motion.h2>
 
                                 <motion.p
-                                    className="text-gray-600 leading-relaxed text-base"
+                                    className="text-gray-600 leading-relaxed md:text-base text-sm"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1 + 0.4 }}

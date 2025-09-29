@@ -34,8 +34,8 @@ const CommonContact = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-7xl mx-auto">
+      <div className="relative z-10 flex items-center min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+        <div className="w-full container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             
             {/* Left Content */}
@@ -55,18 +55,17 @@ const CommonContact = () => {
 
             {/* Right Form */}
             <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto">
-              <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl">
+              <div className="bg-white bg-opacity-100 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div className="mb-8">
                   <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
                     Make an enquiry
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                    Save your time and easily rent or sell your property with the 
-                    lowest commission on the real estate market.
+                    Save your time and easily rent or sell your property with the lowest commission on the real estate market.
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                <div className="md:space-y-6 space-y-3">
                   {/* Name Field */}
                   <div>
                     <div className="block text-sm font-medium text-gray-700 mb-2">

@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop"
 import RealEstateServices from "@/components/common/RealEstateServices"
 import DreamHomeLanding from "@/components/common/DreamHomeLanding"
 import CommonContact from "@/components/contact/commonContact"
+import FeaturedProjects from "@/components/home/FeaturedProjects"
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <HeroSection/>
         <FeaturedProperties/>
         <BuyingProcessSection/>
+        <FeaturedProjects/>
         <RealEstateServices/>
         <AboutSection/>
         <CommonContact/>
