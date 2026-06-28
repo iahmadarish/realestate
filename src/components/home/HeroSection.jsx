@@ -152,9 +152,9 @@ const HeroSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/10 to-cyan-500/10 rounded-3xl"></div>
               <img
-                src="https://www.rbhomesjaipur.com/assets/front/images/pngtree-real-estate-png-image_16490379.png"
+                src="https://olidanprojects.com/wp-content/uploads/2025/07/GettyImages-1151832961.jpg"
                 alt="Real Estate"
-                className="w-full h-full object-contain relative z-10"
+                className="w-full h-full object-cover relative z-10 rounded-lg"
               />
 
               {/* Floating Card */}
